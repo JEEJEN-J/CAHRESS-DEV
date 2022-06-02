@@ -1,0 +1,51 @@
+{
+  "startDatetime": "2022-05-31T10:25:51.000-0400",
+  "stopDatetime": null,
+  "display": "Facility Visit @ Unknown Location - 31/05/2022 10:25",
+  "resourceVersion": "1.9",
+  "uuid": "38932f9f-2dca-4fa5-9ff7-efcd93560923",
+  "visitType": {
+    "display": "Facility Visit",
+    "links": [
+      {
+        "rel": "self",
+        "uri": "http://localhost:8080/openmrs/ws/rest/v1/visittype/7b0f5697-27e3-40c4-8bae-f4049abfb4ed"
+      }
+    ],
+    "uuid": "7b0f5697-27e3-40c4-8bae-f4049abfb4ed"
+  },
+  "encounters": null,
+  "patient": {
+    "display": "10002T - thamara oldithe",
+    "links": [
+      {
+        "rel": "self",
+        "uri": "http://localhost:8080/openmrs/ws/rest/v1/patient/5e1fc3b9-aa34-4514-9da3-6c65b074ede0"
+      }
+    ],
+    "uuid": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0"
+  },
+  "location": {
+    "display": "Unknown Location",
+    "links": [
+      {
+        "rel": "self",
+        "uri": "http://localhost:8080/openmrs/ws/rest/v1/location/8d6c993e-c2cc-11de-8d13-0010c6dffd0f"
+      }
+    ],
+    "uuid": "8d6c993e-c2cc-11de-8d13-0010c6dffd0f"
+  },
+  "attributes": [],
+  "voided": false,
+  "links": [
+    {
+      "rel": "self",
+      "uri": "http://localhost:8080/openmrs/ws/rest/v1/visit/38932f9f-2dca-4fa5-9ff7-efcd93560923"
+    },
+    {
+      "rel": "full",
+      "uri": "http://localhost:8080/openmrs/ws/rest/v1/visit/38932f9f-2dca-4fa5-9ff7-efcd93560923?v=full"
+    }
+  ],
+  "indication": null
+}

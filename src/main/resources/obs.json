@@ -1,0 +1,334 @@
+{
+  "results": [
+    {
+      "uuid": "5ba993e7-5418-4ba7-8699-cc1e1ba08a01",
+      "display": "Enregistrement de patient 31/03/2022",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/5ba993e7-5418-4ba7-8699-cc1e1ba08a01"
+        }
+      ]
+    },
+    {
+      "uuid": "40e77b3f-689e-4039-9a08-6c8e847710cd",
+      "display": "Vitals 30/05/2022",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/40e77b3f-689e-4039-9a08-6c8e847710cd"
+        }
+      ]
+    },
+    {
+      "uuid": "05db6a83-338c-48fb-a313-3ed65a990630",
+      "display": "Vitals 30/05/2022",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/05db6a83-338c-48fb-a313-3ed65a990630"
+        }
+      ]
+    },
+    {
+      "uuid": "59d26db8-f60c-4e96-8720-83ea563c7447",
+      "display": "Ord. Médicale 31/05/2022",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/59d26db8-f60c-4e96-8720-83ea563c7447"
+        }
+      ]
+    },
+    {
+      "uuid": "3e9db004-2fe9-4f7e-987a-998cdfa31f3e",
+      "display": "Ord. Médicale 31/05/2022",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/3e9db004-2fe9-4f7e-987a-998cdfa31f3e"
+        }
+      ]
+    },
+    {
+      "uuid": "68a79ef4-03bb-4da9-b011-271086e4b413",
+      "display": "Ord. Médicale 31/05/2022",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/68a79ef4-03bb-4da9-b011-271086e4b413"
+        }
+      ]
+    },
+    {
+      "uuid": "0d4c31be-9ee2-439f-b58b-b64b030a4db9",
+      "display": "Ord. Médicale 31/05/2022",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/0d4c31be-9ee2-439f-b58b-b64b030a4db9"
+        }
+      ]
+    },
+    {
+      "uuid": "af633436-5e31-4fe9-b382-52f1b1475fea",
+      "display": "Ord. Médicale 31/05/2022",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/af633436-5e31-4fe9-b382-52f1b1475fea"
+        }
+      ]
+    },
+    {
+      "uuid": "01c1117a-b42e-44ff-aee6-4720a813344b",
+      "display": "Ord. Médicale 31/05/2022",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/01c1117a-b42e-44ff-aee6-4720a813344b"
+        }
+      ]
+    },
+    {
+      "uuid": "be034afc-1dfc-4dfc-89ae-57d9f7828e97",
+      "display": "Ord. Médicale 31/05/2022",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/be034afc-1dfc-4dfc-89ae-57d9f7828e97"
+        }
+      ]
+    },
+    {
+      "uuid": "0ee13bba-5dd0-49b7-82a6-e3d2fbb7e7ff",
+      "display": "Ord. Médicale 31/05/2022",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/0ee13bba-5dd0-49b7-82a6-e3d2fbb7e7ff"
+        }
+      ]
+    },
+    {
+      "uuid": "f67024be-67bd-4586-b2c3-30774b57ecb5",
+      "display": "Ord. Médicale 31/05/2022",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/f67024be-67bd-4586-b2c3-30774b57ecb5"
+        }
+      ]
+    },
+    {
+      "uuid": "4a18e370-8548-41c4-882f-dba44f4b653c",
+      "display": "Ord. Médicale 31/05/2022",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/4a18e370-8548-41c4-882f-dba44f4b653c"
+        }
+      ]
+    },
+    {
+      "uuid": "2549816d-6200-4c46-836c-527b92f8ba20",
+      "display": "Ord. Médicale 31/05/2022",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/2549816d-6200-4c46-836c-527b92f8ba20"
+        }
+      ]
+    },
+    {
+      "uuid": "69c90968-3cd6-4dc8-b28d-c789d79b9a0c",
+      "display": "Ord. Médicale 31/05/2022",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/69c90968-3cd6-4dc8-b28d-c789d79b9a0c"
+        }
+      ]
+    },
+    {
+      "uuid": "d9e59bf2-8e23-41a5-bfb1-df60af768cbf",
+      "display": "Ord. Médicale 31/05/2022",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/d9e59bf2-8e23-41a5-bfb1-df60af768cbf"
+        }
+      ]
+    },
+    {
+      "uuid": "d703bb5c-be7e-4cb4-a27d-6b7e71d46778",
+      "display": "Ord. Médicale 31/05/2022",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/d703bb5c-be7e-4cb4-a27d-6b7e71d46778"
+        }
+      ]
+    },
+    {
+      "uuid": "110e21cc-bfa7-4859-8704-c6237c7dec00",
+      "display": "Ord. Médicale 31/05/2022",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/110e21cc-bfa7-4859-8704-c6237c7dec00"
+        }
+      ]
+    },
+    {
+      "uuid": "561a2dff-a16e-4c40-805c-74ca1be01c32",
+      "display": "Ord. Médicale 31/05/2022",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/561a2dff-a16e-4c40-805c-74ca1be01c32"
+        }
+      ]
+    },
+    {
+      "uuid": "e26daea3-2919-4954-9dd9-6cd14805d5ac",
+      "display": "Ord. Médicale 31/05/2022",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/e26daea3-2919-4954-9dd9-6cd14805d5ac"
+        }
+      ]
+    },
+    {
+      "uuid": "58aeacec-659d-426f-b3fe-d4c30d129138",
+      "display": "Ord. Médicale 31/05/2022",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/58aeacec-659d-426f-b3fe-d4c30d129138"
+        }
+      ]
+    },
+    {
+      "uuid": "d0194ca0-545b-4a33-a341-6d4939ff9aa7",
+      "display": "Ord. Médicale 31/05/2022",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/d0194ca0-545b-4a33-a341-6d4939ff9aa7"
+        }
+      ]
+    },
+    {
+      "uuid": "7cac53a0-7bfc-40a9-a778-c1c3d8f78f52",
+      "display": "Ord. Médicale 31/05/2022",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/7cac53a0-7bfc-40a9-a778-c1c3d8f78f52"
+        }
+      ]
+    },
+    {
+      "uuid": "4fee6fde-e8da-40c8-8f28-ff29c7a36af9",
+      "display": "Ord. Médicale 31/05/2022",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/4fee6fde-e8da-40c8-8f28-ff29c7a36af9"
+        }
+      ]
+    },
+    {
+      "uuid": "13075839-1493-403f-a847-2fc389012eb7",
+      "display": "Ord. Médicale 31/05/2022",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/13075839-1493-403f-a847-2fc389012eb7"
+        }
+      ]
+    },
+    {
+      "uuid": "5d2211d3-aea3-4ec9-b83c-57219ec3e461",
+      "display": "Ord. Médicale 31/05/2022",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/5d2211d3-aea3-4ec9-b83c-57219ec3e461"
+        }
+      ]
+    },
+    {
+      "uuid": "94ffbd7c-1c61-4b72-9549-c4d09920d94c",
+      "display": "Ord. Médicale 31/05/2022",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/94ffbd7c-1c61-4b72-9549-c4d09920d94c"
+        }
+      ]
+    },
+    {
+      "uuid": "c0450ea9-900e-4812-a56e-68bcb61ea455",
+      "display": "Ord. Médicale 31/05/2022",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/c0450ea9-900e-4812-a56e-68bcb61ea455"
+        }
+      ]
+    },
+    {
+      "uuid": "00925a55-9784-49a4-9c0a-261561bc2cb2",
+      "display": "Ord. Médicale 31/05/2022",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/00925a55-9784-49a4-9c0a-261561bc2cb2"
+        }
+      ]
+    },
+    {
+      "uuid": "82bf2d26-d838-4755-8863-6a1bf982a882",
+      "display": "Ord. Médicale 31/05/2022",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/82bf2d26-d838-4755-8863-6a1bf982a882"
+        }
+      ]
+    },
+    {
+      "uuid": "7bcec5c1-df57-4946-a319-77dc458f9610",
+      "display": "Ord. Médicale 31/05/2022",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/7bcec5c1-df57-4946-a319-77dc458f9610"
+        }
+      ]
+    },
+    {
+      "uuid": "1d07f948-e99c-4e0c-9ed1-b6ce33d97835",
+      "display": "Ord. Médicale 31/05/2022",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/1d07f948-e99c-4e0c-9ed1-b6ce33d97835"
+        }
+      ]
+    },
+    {
+      "uuid": "93c2305f-2b2a-49a6-9ab3-c0bfeb3284d0",
+      "display": "Ord. Médicale 31/05/2022",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/93c2305f-2b2a-49a6-9ab3-c0bfeb3284d0"
+        }
+      ]
+    }
+  ]
+}

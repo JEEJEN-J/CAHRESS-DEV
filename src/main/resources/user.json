@@ -1,0 +1,299 @@
+{
+  "encounterProviders": [
+    {
+      "provider": "ed9ecaf9-4974-4192-99a3-3e159030a6ec",
+      "encounterRole": "ef0445e7-bfe6-4260-a351-09fc835b6bcd"
+    }
+  ],
+  "obs": [
+    {
+      "obsDatetime": "2022-05-31T15:06:39.349Z",
+      "person": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+      "concept": "159811AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "value": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    {
+      "obsDatetime": "2022-05-31T15:06:39.349Z",
+      "person": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+      "concept": "1755AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "value": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    {
+      "obsDatetime": "2022-05-31T15:06:39.349Z",
+      "person": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+      "concept": "c2aacdc8-156e-4527-8934-a8fb94162419",
+      "value": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    {
+      "obsDatetime": "2022-05-31T15:06:39.349Z",
+      "person": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+      "concept": "164181AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "value": "164180AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    {
+      "obsDatetime": "2022-05-31T15:06:39.349Z",
+      "person": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+      "concept": "159599AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "value": "2022-05-31T15:06:39.349Z"
+    },
+    {
+      "obsDatetime": "2022-05-31T15:06:39.349Z",
+      "person": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+      "concept": "164432AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "value": "dd69cffe-d7b8-4cf1-bc11-3ac302763d48"
+    },
+    {
+      "obsDatetime": "2022-05-31T15:06:39.349Z",
+      "person": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+      "concept": "163258AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "value": "Mackendy Charles"
+    },
+    {
+      "obsDatetime": "2022-05-31T15:06:39.349Z",
+      "person": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+      "concept": "164352AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "value": "160273AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    {
+      "obsDatetime": "2022-05-31T15:06:39.349Z",
+      "person": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+      "concept": "162549AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "value": "2022-05-31T15:06:39.349Z"
+    },
+    {
+      "obsDatetime": "2022-05-31T15:06:39.349Z",
+      "person": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+      "concept": "1473AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "value": "65634254"
+    },
+    {
+      "obsDatetime": "2022-05-31T15:06:39.349Z",
+      "person": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+      "concept": "f9d7da27-6c7d-4418-a653-fdcf05782f82",
+      "value": "35345"
+    },
+    {
+      "obsDatetime": "2022-05-31T15:06:39.349Z",
+      "person": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+      "concept": "163340AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "value": "163339AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    {
+      "obsDatetime": "2022-05-31T15:06:39.349Z",
+      "person": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+      "concept": "163341AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "value": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    {
+      "obsDatetime": "2022-05-31T15:06:39.349Z",
+      "person": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+      "concept": "1e1c4061-47b8-4c4a-ba70-a9f56158c649",
+      "value": "456546465"
+    },
+    {
+      "groupMembers": [
+        {
+          "obsDatetime": "2022-05-31T15:06:39.349Z",
+          "person": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+          "concept": "1282AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "value": "75523AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        },
+        {
+          "obsDatetime": "2022-05-31T15:06:39.349Z",
+          "person": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+          "concept": "1444AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "value": "150mg comprim&#xe9;"
+        },
+        {
+          "obsDatetime": "2022-05-31T15:06:39.349Z",
+          "person": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+          "concept": "ca8bc9c3-7f97-450a-8f33-e98f776b90e1",
+          "value": "65"
+        },
+        {
+          "obsDatetime": "2022-05-31T15:06:39.349Z",
+          "person": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+          "concept": "159368AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "value": "65"
+        },
+        {
+          "obsDatetime": "2022-05-31T15:06:39.349Z",
+          "person": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+          "concept": "160742AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "value": "138405AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        },
+        {
+          "obsDatetime": "2022-05-31T15:06:39.349Z",
+          "person": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+          "concept": "1282AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "value": "84309AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        },
+        {
+          "obsDatetime": "2022-05-31T15:06:39.349Z",
+          "person": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+          "concept": "1444AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "value": "150mg comprim&#xe9;"
+        },
+        {
+          "obsDatetime": "2022-05-31T15:06:39.349Z",
+          "person": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+          "concept": "ca8bc9c3-7f97-450a-8f33-e98f776b90e1",
+          "value": "65"
+        },
+        {
+          "obsDatetime": "2022-05-31T15:06:39.349Z",
+          "person": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+          "concept": "159368AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "value": "65"
+        },
+        {
+          "obsDatetime": "2022-05-31T15:06:39.349Z",
+          "person": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+          "concept": "160742AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "value": "138405AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        },
+        {
+          "obsDatetime": "2022-05-31T15:06:39.349Z",
+          "person": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+          "concept": "1282AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "value": "78643AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        },
+        {
+          "obsDatetime": "2022-05-31T15:06:39.349Z",
+          "person": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+          "concept": "1444AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "value": "150mg comprim&#xe9;"
+        },
+        {
+          "obsDatetime": "2022-05-31T15:06:39.349Z",
+          "person": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+          "concept": "ca8bc9c3-7f97-450a-8f33-e98f776b90e1",
+          "value": "65"
+        },
+        {
+          "obsDatetime": "2022-05-31T15:06:39.349Z",
+          "person": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+          "concept": "159368AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "value": "65"
+        },
+        {
+          "obsDatetime": "2022-05-31T15:06:39.349Z",
+          "person": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+          "concept": "160742AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "value": "138405AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        }
+      ],
+      "obsDatetime": "2022-05-31T15:06:39.349Z",
+      "person": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+      "concept": "1442AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    {
+      "groupMembers": [
+        {
+          "obsDatetime": "2022-05-31T15:06:39.349Z",
+          "person": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+          "concept": "1282AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "value": "75523AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        },
+        {
+          "obsDatetime": "2022-05-31T15:06:39.349Z",
+          "person": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+          "concept": "1276AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "value": true
+        },
+        {
+          "obsDatetime": "2022-05-31T15:06:39.349Z",
+          "person": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+          "concept": "1444AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "value": "65"
+        },
+        {
+          "obsDatetime": "2022-05-31T15:06:39.349Z",
+          "person": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+          "concept": "159368AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "value": "56"
+        },
+        {
+          "obsDatetime": "2022-05-31T16:33:39.823Z",
+          "person": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+          "concept": "1443AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "value": "56"
+        },
+        {
+          "obsDatetime": "2022-05-31T15:06:39.349Z",
+          "person": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+          "concept": "1282AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "value": "84309AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        },
+        {
+          "obsDatetime": "2022-05-31T15:06:39.349Z",
+          "person": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+          "concept": "1276AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "value": true
+        },
+        {
+          "obsDatetime": "2022-05-31T15:06:39.349Z",
+          "person": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+          "concept": "1444AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "value": "65"
+        },
+        {
+          "obsDatetime": "2022-05-31T15:06:39.349Z",
+          "person": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+          "concept": "159368AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "value": "56"
+        },
+        {
+          "obsDatetime": "2022-05-31T16:33:39.823Z",
+          "person": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+          "concept": "1443AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "value": "56"
+        },
+        {
+          "obsDatetime": "2022-05-31T15:06:39.349Z",
+          "person": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+          "concept": "1282AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "value": "78643AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        },
+        {
+          "obsDatetime": "2022-05-31T15:06:39.349Z",
+          "person": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+          "concept": "1276AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "value": true
+        },
+        {
+          "obsDatetime": "2022-05-31T15:06:39.349Z",
+          "person": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+          "concept": "1444AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "value": "65"
+        },
+        {
+          "obsDatetime": "2022-05-31T15:06:39.349Z",
+          "person": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+          "concept": "159368AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "value": "56"
+        },
+        {
+          "obsDatetime": "2022-05-31T16:33:39.823Z",
+          "person": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+          "concept": "1443AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "value": "56"
+        }
+      ],
+      "obsDatetime": "2022-05-31T15:06:39.349Z",
+      "person": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+      "concept": "163711AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    }
+  ],
+  "patient": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+  "location": "8d6c993e-c2cc-11de-8d13-0010c6dffd0f",
+  "encounterDatetime": "2022-05-31T15:06:39.349Z",
+  "visit": {
+    "startDatetime": "2022-05-31T15:06:39.349Z",
+    "patient": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
+    "stopDatetime": "2022-05-31T15:07:39.349Z",
+    "location": "8d6c993e-c2cc-11de-8d13-0010c6dffd0f",
+    "visitType": "7b0f5697-27e3-40c4-8bae-f4049abfb4ed"
+  },
+  "encounterType": "10d73929-54b6-4d18-a647-8b7316bc1ae3"
+}
