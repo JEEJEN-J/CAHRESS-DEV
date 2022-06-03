@@ -1,8 +1,8 @@
 package org.openmrs.charess.api.service;
 
 import org.openmrs.charess.api.configuration.Http;
-import org.openmrs.charess.api.utils.AppLink;
-import org.openmrs.charess.api.utils.GeneratedIdentifier;
+import org.openmrs.charess.api.utils.ApplicationProperties;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.net.HttpURLConnection;
@@ -13,12 +13,13 @@ import java.util.List;
 @Component
 public class PatientService {
 
-    private String baseLink = AppLink.API_URI;
+    @Autowired
+    private ApplicationProperties applicationProperties;
 
     public List<?> createPatient(String patient) {
         List<?> objects = null;
         try {
-            HttpURLConnection httpURLConnection = Http.getHttpConnection(baseLink + "/patient", "POST");
+            HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/patient", "POST");
             objects = Http.postObject(httpURLConnection, patient);
         } catch (Exception e) {
             e.printStackTrace();
@@ -29,7 +30,7 @@ public class PatientService {
     public List<?> createPatientIdentifier(String parent_uuid, String patient) {
         List<?> objects = null;
         try {
-            HttpURLConnection httpURLConnection = Http.getHttpConnection(baseLink + "/patient/" + parent_uuid + "/identifier", "POST");
+            HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/patient/" + parent_uuid + "/identifier", "POST");
             objects = Http.postObject(httpURLConnection, patient);
         } catch (Exception e) {
             e.printStackTrace();
@@ -40,7 +41,7 @@ public class PatientService {
     public List<?> createPatientAllergy(String parent_uuid, String patient) {
         List<?> objects = null;
         try {
-            HttpURLConnection httpURLConnection = Http.getHttpConnection(baseLink + "/patient/" + parent_uuid + "/allergy", "POST");
+            HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/patient/" + parent_uuid + "/allergy", "POST");
             objects = Http.postObject(httpURLConnection, patient);
         } catch (Exception e) {
             e.printStackTrace();
@@ -51,7 +52,7 @@ public class PatientService {
     public List<?> getPatientByCriteria(String criteria, Integer limit) {
         List<?> patients = new ArrayList<>();
         try {
-            HttpURLConnection httpURLConnection = Http.getHttpConnection(baseLink + "/patient?q=" + criteria + "&v=default&limit=" + limit, "GET");
+            HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/patient?q=" + criteria + "&v=default&limit=" + limit, "GET");
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             patients = Http.getObject(httpURLConnection);
@@ -64,7 +65,7 @@ public class PatientService {
     public List<?> getPatientByUuid(String uuid) {
         List<?> patients = new ArrayList<>();
         try {
-            HttpURLConnection httpURLConnection = Http.getHttpConnection(baseLink + "/patient/" + uuid, "GET");
+            HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/patient/" + uuid, "GET");
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             patients = Http.getObject(httpURLConnection);
@@ -77,7 +78,7 @@ public class PatientService {
     public List<?> getPatientByIdentifier(String identifier) {
         List<?> patients = new ArrayList<>();
         try {
-            HttpURLConnection httpURLConnection = Http.getHttpConnection(baseLink + "/patient?identifier=" + identifier, "GET");
+            HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/patient?identifier=" + identifier, "GET");
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             patients = Http.getObject(httpURLConnection);
@@ -90,7 +91,7 @@ public class PatientService {
     public List<?> getPatientByParentUuidIdentifier(String parent_uuid) {
         List<?> patients = new ArrayList<>();
         try {
-            HttpURLConnection httpURLConnection = Http.getHttpConnection(baseLink + "/patient/" + parent_uuid + "/identifier", "GET");
+            HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/patient/" + parent_uuid + "/identifier", "GET");
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             patients = Http.getObject(httpURLConnection);
@@ -103,7 +104,7 @@ public class PatientService {
     public List<?> getPatientByParentUuidIdentifierUuid(String parent_uuid, String uuid) {
         List<?> patients = new ArrayList<>();
         try {
-            HttpURLConnection httpURLConnection = Http.getHttpConnection(baseLink + "/patient/" + parent_uuid + "/identifier/" + uuid, "GET");
+            HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/patient/" + parent_uuid + "/identifier/" + uuid, "GET");
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             patients = Http.getObject(httpURLConnection);
@@ -116,7 +117,7 @@ public class PatientService {
     public List<?> getPatientByParentUuidAllergy(String parent_uuid) {
         List<?> patients = new ArrayList<>();
         try {
-            HttpURLConnection httpURLConnection = Http.getHttpConnection(baseLink + "/patient/" + parent_uuid + "/allergy", "GET");
+            HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/patient/" + parent_uuid + "/allergy", "GET");
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             patients = Http.getObject(httpURLConnection);
@@ -129,7 +130,7 @@ public class PatientService {
     public List<?> getPatientByParentUuidAllergyUuid(String parent_uuid, String uuid) {
         List<?> patients = new ArrayList<>();
         try {
-            HttpURLConnection httpURLConnection = Http.getHttpConnection(baseLink + "/patient/" + parent_uuid + "/allergy/" + uuid, "GET");
+            HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/patient/" + parent_uuid + "/allergy/" + uuid, "GET");
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             patients = Http.getObject(httpURLConnection);
@@ -143,7 +144,7 @@ public class PatientService {
     public List<?> updatePatient(String parent_uuid, String patient) {
         List<?> objects = null;
         try {
-            HttpURLConnection httpURLConnection = Http.getHttpConnection(baseLink + "/patient/" + parent_uuid + "/identifier", "POST");
+            HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/patient/" + parent_uuid + "/identifier", "POST");
             objects = Http.postObject(httpURLConnection, patient);
         } catch (Exception e) {
             e.printStackTrace();
@@ -154,7 +155,7 @@ public class PatientService {
     public List<?> updatePatientIdentifier(String parent_uuid, String uuid, String patient) {
         List<?> objects = null;
         try {
-            HttpURLConnection httpURLConnection = Http.getHttpConnection(baseLink + "/patient/" + parent_uuid + "/identifier/" + uuid, "POST");
+            HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/patient/" + parent_uuid + "/identifier/" + uuid, "POST");
             objects = Http.postObject(httpURLConnection, patient);
         } catch (Exception e) {
             e.printStackTrace();
@@ -165,7 +166,7 @@ public class PatientService {
     public List<?> updatePatientAllergy(String parent_uuid, String uuid, String patient) {
         List<?> objects = null;
         try {
-            HttpURLConnection httpURLConnection = Http.getHttpConnection(baseLink + "/patient/" + parent_uuid + "/allergy/" + uuid, "POST");
+            HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/patient/" + parent_uuid + "/allergy/" + uuid, "POST");
             objects = Http.postObject(httpURLConnection, patient);
         } catch (Exception e) {
             e.printStackTrace();

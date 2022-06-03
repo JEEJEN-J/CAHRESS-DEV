@@ -1,8 +1,8 @@
 package org.openmrs.charess.api.service;
 
-
 import org.openmrs.charess.api.configuration.Http;
-import org.openmrs.charess.api.utils.AppLink;
+import org.openmrs.charess.api.utils.ApplicationProperties;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.net.HttpURLConnection;
@@ -14,12 +14,13 @@ import java.util.List;
 @Component
 public class PersonService {
 
-    private String baseLink = AppLink.API_URI;
+    @Autowired
+    private ApplicationProperties applicationProperties;
 
     public List<?> createPerson(String person) {
         List<?> objects = null;
         try {
-            HttpURLConnection httpURLConnection = Http.getHttpConnection(baseLink + "/person", "POST");
+            HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/person", "POST");
             objects = Http.postObject(httpURLConnection, person);
         } catch (Exception e) {
             e.printStackTrace();
@@ -30,7 +31,7 @@ public class PersonService {
     public List<?> createPersonName(String uuid, String personName) {
         List<?> objects = null;
         try {
-            HttpURLConnection httpURLConnection = Http.getHttpConnection(baseLink + "/person/" + uuid + "/name", "POST");
+            HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/person/" + uuid + "/name", "POST");
             objects = Http.postObject(httpURLConnection, personName);
         } catch (Exception e) {
             e.printStackTrace();
@@ -41,7 +42,7 @@ public class PersonService {
     public List<?> createPersonAddress(String uuid, String personAddress) {
         List<?> objects = null;
         try {
-            HttpURLConnection httpURLConnection = Http.getHttpConnection(baseLink + "/person/" + uuid + "/address", "POST");
+            HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/person/" + uuid + "/address", "POST");
             objects = Http.postObject(httpURLConnection, personAddress);
         } catch (Exception e) {
             e.printStackTrace();
@@ -52,7 +53,7 @@ public class PersonService {
     public List<?> createPersonAttribute(String uuid, String personAttribute) {
         List<?> objects = null;
         try {
-            HttpURLConnection httpURLConnection = Http.getHttpConnection(baseLink + "/person/" + uuid + "/attribute", "POST");
+            HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/person/" + uuid + "/attribute", "POST");
             objects = Http.postObject(httpURLConnection, personAttribute);
         } catch (Exception e) {
             e.printStackTrace();
@@ -63,7 +64,7 @@ public class PersonService {
     public List<?> createPersonAttributeType(String personattributetype) {
         List<?> objects = null;
         try {
-            HttpURLConnection httpURLConnection = Http.getHttpConnection(baseLink + "/personattributetype", "POST");
+            HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/personattributetype", "POST");
             objects = Http.postObject(httpURLConnection, personattributetype);
         } catch (Exception e) {
             e.printStackTrace();
@@ -74,7 +75,7 @@ public class PersonService {
     public List<?> getPersonByUuid(String uuid) {
         List<?> persons = new ArrayList<>();
         try {
-            HttpURLConnection httpURLConnection = Http.getHttpConnection(baseLink + "/person/" + uuid, "GET");
+            HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/person/" + uuid, "GET");
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             persons = Http.getObject(httpURLConnection);
@@ -87,7 +88,7 @@ public class PersonService {
     public List<?> getPersonByParentUuidName(String uuid) {
         List<?> persons = new ArrayList<>();
         try {
-            HttpURLConnection httpURLConnection = Http.getHttpConnection(baseLink + "/person/" + uuid + "/name", "GET");
+            HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/person/" + uuid + "/name", "GET");
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             persons = Http.getObject(httpURLConnection);
@@ -100,7 +101,7 @@ public class PersonService {
     public List<?> getPersonByParentUuidAddress(String uuid) {
         List<?> persons = new ArrayList<>();
         try {
-            HttpURLConnection httpURLConnection = Http.getHttpConnection(baseLink + "/person/" + uuid + "/address", "GET");
+            HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/person/" + uuid + "/address", "GET");
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             persons = Http.getObject(httpURLConnection);
@@ -113,7 +114,7 @@ public class PersonService {
     public List<?> getPersonByParentUuidAttribute(String uuid) {
         List<?> persons = new ArrayList<>();
         try {
-            HttpURLConnection httpURLConnection = Http.getHttpConnection(baseLink + "/person/" + uuid + "/attribute", "GET");
+            HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/person/" + uuid + "/attribute", "GET");
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             persons = Http.getObject(httpURLConnection);
@@ -126,7 +127,7 @@ public class PersonService {
     public List<?> getPersonByParentUuidNameUuid(String parent_uuid, String uuid) {
         List<?> persons = new ArrayList<>();
         try {
-            HttpURLConnection httpURLConnection = Http.getHttpConnection(baseLink + "/person/" + parent_uuid + "/name/" + uuid, "GET");
+            HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/person/" + parent_uuid + "/name/" + uuid, "GET");
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             persons = Http.getObject(httpURLConnection);
@@ -139,7 +140,7 @@ public class PersonService {
     public List<?> getPersonByParentUuidAddressUuid(String parent_uuid, String uuid) {
         List<?> persons = new ArrayList<>();
         try {
-            HttpURLConnection httpURLConnection = Http.getHttpConnection(baseLink + "/person/" + parent_uuid + "/address/" + uuid, "GET");
+            HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/person/" + parent_uuid + "/address/" + uuid, "GET");
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             persons = Http.getObject(httpURLConnection);
@@ -152,7 +153,7 @@ public class PersonService {
     public List<?> getPersonByParentUuidAttributeUuid(String parent_uuid, String uuid) {
         List<?> persons = new ArrayList<>();
         try {
-            HttpURLConnection httpURLConnection = Http.getHttpConnection(baseLink + "/person/" + parent_uuid + "/attribute/" + uuid, "GET");
+            HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/person/" + parent_uuid + "/attribute/" + uuid, "GET");
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             persons = Http.getObject(httpURLConnection);
@@ -165,7 +166,7 @@ public class PersonService {
     public List<?> getPersonAttributeTypeByUuid(String uuid) {
         List<?> persons = new ArrayList<>();
         try {
-            HttpURLConnection httpURLConnection = Http.getHttpConnection(baseLink + "/personattributetype/" + uuid, "GET");
+            HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/personattributetype/" + uuid, "GET");
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             persons = Http.getObject(httpURLConnection);
@@ -178,7 +179,7 @@ public class PersonService {
     public List<?> updatePerson(String uuid, String person) {
         List<?> objects = null;
         try {
-            HttpURLConnection httpURLConnection = Http.getHttpConnection(baseLink + "/person/" + uuid, "POST");
+            HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/person/" + uuid, "POST");
             objects = Http.postObject(httpURLConnection, person);
         } catch (Exception e) {
             e.printStackTrace();
@@ -189,7 +190,7 @@ public class PersonService {
     public List<?> updatePersonName(String parent_uuid, String uuid, String personName) {
         List<?> objects = null;
         try {
-            HttpURLConnection httpURLConnection = Http.getHttpConnection(baseLink + "/person/" + parent_uuid + "/name/" + uuid, "POST");
+            HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/person/" + parent_uuid + "/name/" + uuid, "POST");
             objects = Http.postObject(httpURLConnection, personName);
         } catch (Exception e) {
             e.printStackTrace();
@@ -200,7 +201,7 @@ public class PersonService {
     public List<?> updatePersonAddress(String parent_uuid, String uuid, String personAddress) {
         List<?> objects = null;
         try {
-            HttpURLConnection httpURLConnection = Http.getHttpConnection(baseLink + "/person/" + parent_uuid + "/address/" + uuid, "POST");
+            HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/person/" + parent_uuid + "/address/" + uuid, "POST");
             objects = Http.postObject(httpURLConnection, personAddress);
         } catch (Exception e) {
             e.printStackTrace();
@@ -211,7 +212,7 @@ public class PersonService {
     public List<?> updatePersonAttribute(String parent_uuid, String uuid, String personAttribute) {
         List<?> objects = null;
         try {
-            HttpURLConnection httpURLConnection = Http.getHttpConnection(baseLink + "/person/" + parent_uuid + "/attribute/" + uuid, "POST");
+            HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/person/" + parent_uuid + "/attribute/" + uuid, "POST");
             objects = Http.postObject(httpURLConnection, personAttribute);
         } catch (Exception e) {
             e.printStackTrace();

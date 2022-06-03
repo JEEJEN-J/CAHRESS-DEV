@@ -1,7 +1,8 @@
 package org.openmrs.charess.api.service;
 
 import org.openmrs.charess.api.configuration.Http;
-import org.openmrs.charess.api.utils.AppLink;
+import org.openmrs.charess.api.utils.ApplicationProperties;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.net.HttpURLConnection;
@@ -12,12 +13,13 @@ import java.util.List;
 @Component
 public class ObservationService {
 
-    private String baseLink = AppLink.API_URI;
+    @Autowired
+    private ApplicationProperties applicationProperties;
 
     public List<?> createObs(String obs) {
         List<?> objects = null;
         try {
-            HttpURLConnection httpURLConnection = Http.getHttpConnection(baseLink + "/obs", "POST");
+            HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/obs", "POST");
             objects = Http.postObject(httpURLConnection, obs);
         } catch (Exception e) {
             e.printStackTrace();
@@ -29,7 +31,7 @@ public class ObservationService {
     public List<?> getObsByUuid(String uuid) {
         List<?> obs = new ArrayList<>();
         try {
-            HttpURLConnection httpURLConnection = Http.getHttpConnection(baseLink + "/obs/" + uuid, "GET");
+            HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/obs/" + uuid, "GET");
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             obs = Http.getObject(httpURLConnection);
@@ -43,7 +45,7 @@ public class ObservationService {
     public List<?> allObs(String patient_uuid, Integer limit) {
         List<?> obs = new ArrayList<>();
         try {
-            HttpURLConnection httpURLConnection = Http.getHttpConnection(baseLink + "/obs?patient=" + patient_uuid + "&limit=" + limit, "GET");
+            HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/obs?patient=" + patient_uuid + "&limit=" + limit, "GET");
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             obs = Http.getObject(httpURLConnection);
@@ -57,7 +59,7 @@ public class ObservationService {
     public List<?> updateObs(String uuid, String obs) {
         List<?> objects = null;
         try {
-            HttpURLConnection httpURLConnection = Http.getHttpConnection(baseLink + "/obs/" + uuid, "POST");
+            HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/obs/" + uuid, "POST");
             objects = Http.postObject(httpURLConnection, obs);
         } catch (Exception e) {
             e.printStackTrace();

@@ -1,6 +1,7 @@
 package org.openmrs.charess.api.service;
 
-import org.openmrs.charess.api.utils.AppLink;
+import org.openmrs.charess.api.utils.ApplicationProperties;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.io.BufferedReader;
@@ -13,14 +14,15 @@ import java.util.List;
 @Component
 public class LocationService {
 
-    private String baseLink = AppLink.API_URI;
+    @Autowired
+    private ApplicationProperties applicationProperties;
     private InputStreamReader inputStreamReader;
     private String output;
 
     public List<Object> getAllLocations() {
         List<Object> allLocations = new ArrayList<>();
         try {
-            URL url = new URL(baseLink + "/location");
+            URL url = new URL(applicationProperties.getBaseUrl() + "/location");
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("GET");
             conn.setRequestProperty("Accept", "application/json");

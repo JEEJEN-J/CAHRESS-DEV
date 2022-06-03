@@ -1,7 +1,8 @@
 package org.openmrs.charess.api.service;
 
 import org.openmrs.charess.api.configuration.Http;
-import org.openmrs.charess.api.utils.AppLink;
+import org.openmrs.charess.api.utils.ApplicationProperties;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.net.HttpURLConnection;
@@ -10,12 +11,13 @@ import java.util.List;
 @Component
 public class VisitService {
 
-    private String baseLink = AppLink.API_URI;
+    @Autowired
+    private ApplicationProperties applicationProperties;
 
     public List<?> createVisit(String visit) {
         List<?> objects = null;
         try {
-            HttpURLConnection httpURLConnection = Http.getHttpConnection(baseLink + "/visit", "POST");
+            HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/visit", "POST");
             objects = Http.postObject(httpURLConnection, visit);
         } catch (Exception e) {
             e.printStackTrace();

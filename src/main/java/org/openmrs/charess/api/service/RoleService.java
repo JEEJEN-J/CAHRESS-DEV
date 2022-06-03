@@ -1,7 +1,8 @@
 package org.openmrs.charess.api.service;
 
 
-import org.openmrs.charess.api.utils.AppLink;
+import org.openmrs.charess.api.utils.ApplicationProperties;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.io.BufferedReader;
@@ -14,14 +15,15 @@ import java.util.List;
 @Component
 public class RoleService {
 
-    private String baseLink = AppLink.API_URI;
+    @Autowired
+    private ApplicationProperties applicationProperties;
     private InputStreamReader inputStreamReader;
     private String output;
 
     public List<Object> getAllRoles() {
         List<Object> allRoles = new ArrayList<>();
         try {
-            URL url = new URL(baseLink + "/role");
+            URL url = new URL(applicationProperties.getBaseUrl() + "/role");
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("GET");
             conn.setRequestProperty("Accept", "application/json");
