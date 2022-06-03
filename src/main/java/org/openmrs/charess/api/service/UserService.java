@@ -2,7 +2,7 @@ package org.openmrs.charess.api.service;
 
 import org.openmrs.charess.api.configuration.Authenticate;
 import org.openmrs.charess.api.configuration.Http;
-import org.openmrs.charess.api.utils.ApplicationProperties;
+import org.openmrs.charess.api.configuration.ApplicationProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

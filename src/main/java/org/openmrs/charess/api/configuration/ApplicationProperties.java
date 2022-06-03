@@ -1,4 +1,4 @@
-package org.openmrs.charess.api.utils;
+package org.openmrs.charess.api.configuration;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
