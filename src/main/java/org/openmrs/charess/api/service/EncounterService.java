@@ -20,6 +20,7 @@ public class EncounterService {
         List<?> objects = null;
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/encounter", "POST");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             objects = Http.postObject(httpURLConnection, encounter);
         } catch (Exception e) {
             e.printStackTrace();
@@ -32,6 +33,7 @@ public class EncounterService {
         List<?> objects = null;
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/encounter/" + encounterUUID + "/encounterprovider", "POST");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             objects = Http.postObject(httpURLConnection, encounterProvider);
         } catch (Exception e) {
             e.printStackTrace();
@@ -44,6 +46,7 @@ public class EncounterService {
         List<?> encounter = new ArrayList<>();
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/encounter/" + uuid, "GET");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             encounter = Http.getObject(httpURLConnection);
@@ -57,7 +60,8 @@ public class EncounterService {
     public List<?> getEncounterByPatient(String patientUUID, String encounterUUID) {
         List<?> encounter = new ArrayList<>();
         try {
-            HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/encounter?patient=" + patientUUID + "&encounter_Type=" + encounterUUID + "&all=true", "GET");
+            HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/encounter?patient=" + patientUUID + "&encounterType=" + encounterUUID + "&all=true", "GET");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             encounter = Http.getObject(httpURLConnection);
@@ -72,6 +76,7 @@ public class EncounterService {
         List<?> encounterProviders = new ArrayList<>();
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/encounter/" + ecounter_uuid + "/encounterprovider", "GET");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             encounterProviders = Http.getObject(httpURLConnection);
@@ -86,6 +91,7 @@ public class EncounterService {
         List<?> encounterProviders = new ArrayList<>();
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/encounter/" + ecounter_uuid + "/encounterprovider/" + encounter_provider_uuid, "GET");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             encounterProviders = Http.getObject(httpURLConnection);
@@ -99,6 +105,7 @@ public class EncounterService {
         List<?> objects = null;
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/encounter/" + uuid, "POST");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             objects = Http.postObject(httpURLConnection, encounter);
         } catch (Exception e) {
             e.printStackTrace();

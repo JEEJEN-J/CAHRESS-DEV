@@ -20,6 +20,7 @@ public class ConceptService {
         List<?> objects = null;
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/concept", "POST");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             objects = Http.postObject(httpURLConnection, concept);
         } catch (Exception e) {
             e.printStackTrace();
@@ -31,6 +32,7 @@ public class ConceptService {
         List<?> objects = null;
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/conceptsource/", "POST");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             objects = Http.postObject(httpURLConnection, conceptSource);
         } catch (Exception e) {
             e.printStackTrace();
@@ -42,6 +44,7 @@ public class ConceptService {
         List<?> objects = null;
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/conceptattributetype", "POST");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             objects = Http.postObject(httpURLConnection, conceptAttributeType);
         } catch (Exception e) {
             e.printStackTrace();
@@ -53,6 +56,7 @@ public class ConceptService {
         List<?> objects = null;
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/conceptmaptype", "POST");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             objects = Http.postObject(httpURLConnection, conceptmaptype);
         } catch (Exception e) {
             e.printStackTrace();
@@ -64,6 +68,7 @@ public class ConceptService {
         List<?> objects = null;
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/conceptreferenceterm", "POST");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             objects = Http.postObject(httpURLConnection, conceptreferenceterm);
         } catch (Exception e) {
             e.printStackTrace();
@@ -75,6 +80,7 @@ public class ConceptService {
         List<?> objects = null;
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/conceptclass/", "POST");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             objects = Http.postObject(httpURLConnection, conceptclass);
         } catch (Exception e) {
             e.printStackTrace();
@@ -86,6 +92,7 @@ public class ConceptService {
         List<?> objects = null;
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/conceptproposal", "POST");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             objects = Http.postObject(httpURLConnection, conceptproposal);
         } catch (Exception e) {
             e.printStackTrace();
@@ -97,6 +104,7 @@ public class ConceptService {
         List<?> objects = null;
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/conceptstopword", "POST");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             objects = Http.postObject(httpURLConnection, conceptstopword);
         } catch (Exception e) {
             e.printStackTrace();
@@ -114,6 +122,7 @@ public class ConceptService {
         List<?> conceptattributetype = new ArrayList<>();
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/conceptattributetype/" + uuid, "GET");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             conceptattributetype = Http.getObject(httpURLConnection);
@@ -127,6 +136,7 @@ public class ConceptService {
         List<?> conceptdatatypes = new ArrayList<>();
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/conceptdatatype/" + uuid, "GET");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             conceptdatatypes = Http.getObject(httpURLConnection);
@@ -140,6 +150,7 @@ public class ConceptService {
         List<?> conceptmaptypes = new ArrayList<>();
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/conceptmaptype/" + uuid, "GET");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             conceptmaptypes = Http.getObject(httpURLConnection);
@@ -153,6 +164,7 @@ public class ConceptService {
         List<?> conceptreferenceterms = new ArrayList<>();
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/conceptreferenceterm/" + uuid, "GET");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             conceptreferenceterms = Http.getObject(httpURLConnection);
@@ -166,6 +178,7 @@ public class ConceptService {
         List<?> conceptreferenceterms = new ArrayList<>();
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/conceptreferenceterm?codeOrName=" + codeOrName + "/", "GET");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             conceptreferenceterms = Http.getObject(httpURLConnection);
@@ -179,6 +192,7 @@ public class ConceptService {
         List<?> conceptclass = new ArrayList<>();
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/conceptclass/" + uuid, "GET");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             conceptclass = Http.getObject(httpURLConnection);
@@ -192,6 +206,7 @@ public class ConceptService {
         List<?> conceptproposal = new ArrayList<>();
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/conceptproposal/" + uuid, "GET");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             conceptproposal = Http.getObject(httpURLConnection);
@@ -205,6 +220,7 @@ public class ConceptService {
         List<?> conceptstopword = new ArrayList<>();
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/conceptstopword/" + uuid, "GET");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             conceptstopword = Http.getObject(httpURLConnection);
@@ -224,6 +240,7 @@ public class ConceptService {
         List<?> conceptclass = new ArrayList<>();
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/conceptclass?limit=" + limit, "GET");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             conceptclass = Http.getObject(httpURLConnection);
@@ -237,6 +254,7 @@ public class ConceptService {
         List<?> conceptproposals = new ArrayList<>();
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/conceptproposa", "GET");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             conceptproposals = Http.getObject(httpURLConnection);
@@ -250,6 +268,7 @@ public class ConceptService {
         List<?> conceptstopwords = new ArrayList<>();
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/conceptstopword", "GET");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             conceptstopwords = Http.getObject(httpURLConnection);

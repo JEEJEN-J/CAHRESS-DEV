@@ -16,6 +16,7 @@ public class ProviderService {
 
     @Autowired
     private ApplicationProperties applicationProperties;
+
     private InputStreamReader inputStreamReader;
     private String output;
 
@@ -23,6 +24,7 @@ public class ProviderService {
         List<?> provider = new ArrayList<>();
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/provider/"+user, "GET");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             provider = Http.getObject(httpURLConnection);
@@ -36,6 +38,7 @@ public class ProviderService {
         List<?> providers = new ArrayList<>();
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/provider", "GET");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             providers = Http.getObject(httpURLConnection);

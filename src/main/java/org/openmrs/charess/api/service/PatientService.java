@@ -20,6 +20,7 @@ public class PatientService {
         List<?> objects = null;
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/patient", "POST");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             objects = Http.postObject(httpURLConnection, patient);
         } catch (Exception e) {
             e.printStackTrace();
@@ -31,6 +32,7 @@ public class PatientService {
         List<?> objects = null;
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/patient/" + parent_uuid + "/identifier", "POST");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             objects = Http.postObject(httpURLConnection, patient);
         } catch (Exception e) {
             e.printStackTrace();
@@ -42,6 +44,7 @@ public class PatientService {
         List<?> objects = null;
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/patient/" + parent_uuid + "/allergy", "POST");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             objects = Http.postObject(httpURLConnection, patient);
         } catch (Exception e) {
             e.printStackTrace();
@@ -53,6 +56,7 @@ public class PatientService {
         List<?> patients = new ArrayList<>();
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/patient?q=" + criteria + "&v=default&limit=" + limit, "GET");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             patients = Http.getObject(httpURLConnection);
@@ -66,6 +70,7 @@ public class PatientService {
         List<?> patients = new ArrayList<>();
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/patient/" + uuid, "GET");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             patients = Http.getObject(httpURLConnection);
@@ -79,6 +84,7 @@ public class PatientService {
         List<?> patients = new ArrayList<>();
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/patient?identifier=" + identifier, "GET");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             patients = Http.getObject(httpURLConnection);
@@ -92,6 +98,7 @@ public class PatientService {
         List<?> patients = new ArrayList<>();
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/patient/" + parent_uuid + "/identifier", "GET");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             patients = Http.getObject(httpURLConnection);
@@ -105,6 +112,7 @@ public class PatientService {
         List<?> patients = new ArrayList<>();
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/patient/" + parent_uuid + "/identifier/" + uuid, "GET");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             patients = Http.getObject(httpURLConnection);
@@ -118,6 +126,7 @@ public class PatientService {
         List<?> patients = new ArrayList<>();
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/patient/" + parent_uuid + "/allergy", "GET");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             patients = Http.getObject(httpURLConnection);
@@ -131,6 +140,7 @@ public class PatientService {
         List<?> patients = new ArrayList<>();
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/patient/" + parent_uuid + "/allergy/" + uuid, "GET");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             patients = Http.getObject(httpURLConnection);
@@ -145,6 +155,7 @@ public class PatientService {
         List<?> objects = null;
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/patient/" + parent_uuid + "/identifier", "POST");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             objects = Http.postObject(httpURLConnection, patient);
         } catch (Exception e) {
             e.printStackTrace();
@@ -156,6 +167,7 @@ public class PatientService {
         List<?> objects = null;
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/patient/" + parent_uuid + "/identifier/" + uuid, "POST");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             objects = Http.postObject(httpURLConnection, patient);
         } catch (Exception e) {
             e.printStackTrace();
@@ -167,6 +179,7 @@ public class PatientService {
         List<?> objects = null;
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/patient/" + parent_uuid + "/allergy/" + uuid, "POST");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             objects = Http.postObject(httpURLConnection, patient);
         } catch (Exception e) {
             e.printStackTrace();

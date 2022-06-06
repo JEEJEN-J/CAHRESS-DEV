@@ -20,6 +20,7 @@ public class ObservationService {
         List<?> objects = null;
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/obs", "POST");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             objects = Http.postObject(httpURLConnection, obs);
         } catch (Exception e) {
             e.printStackTrace();
@@ -32,6 +33,7 @@ public class ObservationService {
         List<?> obs = new ArrayList<>();
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/obs/" + uuid, "GET");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             obs = Http.getObject(httpURLConnection);
@@ -46,6 +48,7 @@ public class ObservationService {
         List<?> obs = new ArrayList<>();
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/obs?patient=" + patient_uuid + "&limit=" + limit, "GET");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             obs = Http.getObject(httpURLConnection);
@@ -60,6 +63,7 @@ public class ObservationService {
         List<?> objects = null;
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/obs/" + uuid, "POST");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             objects = Http.postObject(httpURLConnection, obs);
         } catch (Exception e) {
             e.printStackTrace();

@@ -1,334 +1,316 @@
-{
-  "results": [
-    {
-      "uuid": "5ba993e7-5418-4ba7-8699-cc1e1ba08a01",
-      "display": "Enregistrement de patient 31/03/2022",
-      "links": [
-        {
-          "rel": "self",
-          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/5ba993e7-5418-4ba7-8699-cc1e1ba08a01"
-        }
-      ]
-    },
-    {
-      "uuid": "40e77b3f-689e-4039-9a08-6c8e847710cd",
-      "display": "Vitals 30/05/2022",
-      "links": [
-        {
-          "rel": "self",
-          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/40e77b3f-689e-4039-9a08-6c8e847710cd"
-        }
-      ]
-    },
-    {
-      "uuid": "05db6a83-338c-48fb-a313-3ed65a990630",
-      "display": "Vitals 30/05/2022",
-      "links": [
-        {
-          "rel": "self",
-          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/05db6a83-338c-48fb-a313-3ed65a990630"
-        }
-      ]
-    },
-    {
-      "uuid": "59d26db8-f60c-4e96-8720-83ea563c7447",
-      "display": "Ord. Médicale 31/05/2022",
-      "links": [
-        {
-          "rel": "self",
-          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/59d26db8-f60c-4e96-8720-83ea563c7447"
-        }
-      ]
-    },
-    {
-      "uuid": "3e9db004-2fe9-4f7e-987a-998cdfa31f3e",
-      "display": "Ord. Médicale 31/05/2022",
-      "links": [
-        {
-          "rel": "self",
-          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/3e9db004-2fe9-4f7e-987a-998cdfa31f3e"
-        }
-      ]
-    },
-    {
-      "uuid": "68a79ef4-03bb-4da9-b011-271086e4b413",
-      "display": "Ord. Médicale 31/05/2022",
-      "links": [
-        {
-          "rel": "self",
-          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/68a79ef4-03bb-4da9-b011-271086e4b413"
-        }
-      ]
-    },
-    {
-      "uuid": "0d4c31be-9ee2-439f-b58b-b64b030a4db9",
-      "display": "Ord. Médicale 31/05/2022",
-      "links": [
-        {
-          "rel": "self",
-          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/0d4c31be-9ee2-439f-b58b-b64b030a4db9"
-        }
-      ]
-    },
-    {
-      "uuid": "af633436-5e31-4fe9-b382-52f1b1475fea",
-      "display": "Ord. Médicale 31/05/2022",
-      "links": [
-        {
-          "rel": "self",
-          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/af633436-5e31-4fe9-b382-52f1b1475fea"
-        }
-      ]
-    },
-    {
-      "uuid": "01c1117a-b42e-44ff-aee6-4720a813344b",
-      "display": "Ord. Médicale 31/05/2022",
-      "links": [
-        {
-          "rel": "self",
-          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/01c1117a-b42e-44ff-aee6-4720a813344b"
-        }
-      ]
-    },
-    {
-      "uuid": "be034afc-1dfc-4dfc-89ae-57d9f7828e97",
-      "display": "Ord. Médicale 31/05/2022",
-      "links": [
-        {
-          "rel": "self",
-          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/be034afc-1dfc-4dfc-89ae-57d9f7828e97"
-        }
-      ]
-    },
-    {
-      "uuid": "0ee13bba-5dd0-49b7-82a6-e3d2fbb7e7ff",
-      "display": "Ord. Médicale 31/05/2022",
-      "links": [
-        {
-          "rel": "self",
-          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/0ee13bba-5dd0-49b7-82a6-e3d2fbb7e7ff"
-        }
-      ]
-    },
-    {
-      "uuid": "f67024be-67bd-4586-b2c3-30774b57ecb5",
-      "display": "Ord. Médicale 31/05/2022",
-      "links": [
-        {
-          "rel": "self",
-          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/f67024be-67bd-4586-b2c3-30774b57ecb5"
-        }
-      ]
-    },
-    {
-      "uuid": "4a18e370-8548-41c4-882f-dba44f4b653c",
-      "display": "Ord. Médicale 31/05/2022",
-      "links": [
-        {
-          "rel": "self",
-          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/4a18e370-8548-41c4-882f-dba44f4b653c"
-        }
-      ]
-    },
-    {
-      "uuid": "2549816d-6200-4c46-836c-527b92f8ba20",
-      "display": "Ord. Médicale 31/05/2022",
-      "links": [
-        {
-          "rel": "self",
-          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/2549816d-6200-4c46-836c-527b92f8ba20"
-        }
-      ]
-    },
-    {
-      "uuid": "69c90968-3cd6-4dc8-b28d-c789d79b9a0c",
-      "display": "Ord. Médicale 31/05/2022",
-      "links": [
-        {
-          "rel": "self",
-          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/69c90968-3cd6-4dc8-b28d-c789d79b9a0c"
-        }
-      ]
-    },
-    {
-      "uuid": "d9e59bf2-8e23-41a5-bfb1-df60af768cbf",
-      "display": "Ord. Médicale 31/05/2022",
-      "links": [
-        {
-          "rel": "self",
-          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/d9e59bf2-8e23-41a5-bfb1-df60af768cbf"
-        }
-      ]
-    },
-    {
-      "uuid": "d703bb5c-be7e-4cb4-a27d-6b7e71d46778",
-      "display": "Ord. Médicale 31/05/2022",
-      "links": [
-        {
-          "rel": "self",
-          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/d703bb5c-be7e-4cb4-a27d-6b7e71d46778"
-        }
-      ]
-    },
-    {
-      "uuid": "110e21cc-bfa7-4859-8704-c6237c7dec00",
-      "display": "Ord. Médicale 31/05/2022",
-      "links": [
-        {
-          "rel": "self",
-          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/110e21cc-bfa7-4859-8704-c6237c7dec00"
-        }
-      ]
-    },
-    {
-      "uuid": "561a2dff-a16e-4c40-805c-74ca1be01c32",
-      "display": "Ord. Médicale 31/05/2022",
-      "links": [
-        {
-          "rel": "self",
-          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/561a2dff-a16e-4c40-805c-74ca1be01c32"
-        }
-      ]
-    },
-    {
-      "uuid": "e26daea3-2919-4954-9dd9-6cd14805d5ac",
-      "display": "Ord. Médicale 31/05/2022",
-      "links": [
-        {
-          "rel": "self",
-          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/e26daea3-2919-4954-9dd9-6cd14805d5ac"
-        }
-      ]
-    },
-    {
-      "uuid": "58aeacec-659d-426f-b3fe-d4c30d129138",
-      "display": "Ord. Médicale 31/05/2022",
-      "links": [
-        {
-          "rel": "self",
-          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/58aeacec-659d-426f-b3fe-d4c30d129138"
-        }
-      ]
-    },
-    {
-      "uuid": "d0194ca0-545b-4a33-a341-6d4939ff9aa7",
-      "display": "Ord. Médicale 31/05/2022",
-      "links": [
-        {
-          "rel": "self",
-          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/d0194ca0-545b-4a33-a341-6d4939ff9aa7"
-        }
-      ]
-    },
-    {
-      "uuid": "7cac53a0-7bfc-40a9-a778-c1c3d8f78f52",
-      "display": "Ord. Médicale 31/05/2022",
-      "links": [
-        {
-          "rel": "self",
-          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/7cac53a0-7bfc-40a9-a778-c1c3d8f78f52"
-        }
-      ]
-    },
-    {
-      "uuid": "4fee6fde-e8da-40c8-8f28-ff29c7a36af9",
-      "display": "Ord. Médicale 31/05/2022",
-      "links": [
-        {
-          "rel": "self",
-          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/4fee6fde-e8da-40c8-8f28-ff29c7a36af9"
-        }
-      ]
-    },
-    {
-      "uuid": "13075839-1493-403f-a847-2fc389012eb7",
-      "display": "Ord. Médicale 31/05/2022",
-      "links": [
-        {
-          "rel": "self",
-          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/13075839-1493-403f-a847-2fc389012eb7"
-        }
-      ]
-    },
-    {
-      "uuid": "5d2211d3-aea3-4ec9-b83c-57219ec3e461",
-      "display": "Ord. Médicale 31/05/2022",
-      "links": [
-        {
-          "rel": "self",
-          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/5d2211d3-aea3-4ec9-b83c-57219ec3e461"
-        }
-      ]
-    },
-    {
-      "uuid": "94ffbd7c-1c61-4b72-9549-c4d09920d94c",
-      "display": "Ord. Médicale 31/05/2022",
-      "links": [
-        {
-          "rel": "self",
-          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/94ffbd7c-1c61-4b72-9549-c4d09920d94c"
-        }
-      ]
-    },
-    {
-      "uuid": "c0450ea9-900e-4812-a56e-68bcb61ea455",
-      "display": "Ord. Médicale 31/05/2022",
-      "links": [
-        {
-          "rel": "self",
-          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/c0450ea9-900e-4812-a56e-68bcb61ea455"
-        }
-      ]
-    },
-    {
-      "uuid": "00925a55-9784-49a4-9c0a-261561bc2cb2",
-      "display": "Ord. Médicale 31/05/2022",
-      "links": [
-        {
-          "rel": "self",
-          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/00925a55-9784-49a4-9c0a-261561bc2cb2"
-        }
-      ]
-    },
-    {
-      "uuid": "82bf2d26-d838-4755-8863-6a1bf982a882",
-      "display": "Ord. Médicale 31/05/2022",
-      "links": [
-        {
-          "rel": "self",
-          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/82bf2d26-d838-4755-8863-6a1bf982a882"
-        }
-      ]
-    },
-    {
-      "uuid": "7bcec5c1-df57-4946-a319-77dc458f9610",
-      "display": "Ord. Médicale 31/05/2022",
-      "links": [
-        {
-          "rel": "self",
-          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/7bcec5c1-df57-4946-a319-77dc458f9610"
-        }
-      ]
-    },
-    {
-      "uuid": "1d07f948-e99c-4e0c-9ed1-b6ce33d97835",
-      "display": "Ord. Médicale 31/05/2022",
-      "links": [
-        {
-          "rel": "self",
-          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/1d07f948-e99c-4e0c-9ed1-b6ce33d97835"
-        }
-      ]
-    },
-    {
-      "uuid": "93c2305f-2b2a-49a6-9ab3-c0bfeb3284d0",
-      "display": "Ord. Médicale 31/05/2022",
-      "links": [
-        {
-          "rel": "self",
-          "uri": "http://localhost:8080/openmrs/ws/rest/v1/encounter/93c2305f-2b2a-49a6-9ab3-c0bfeb3284d0"
-        }
-      ]
-    }
-  ]
-}
+[
+  {
+    "results": [
+      {
+        "display": "Anonymous",
+        "links": [
+          {
+            "rel": "self",
+            "uri": "http://dme.charess.org:8082/openmrs/ws/rest/v1/ws/rest/v1/role/774b2af3-6437-4e5a-a310-547554c7c65c"
+          }
+        ],
+        "uuid": "774b2af3-6437-4e5a-a310-547554c7c65c"
+      },
+      {
+        "display": "Application: Administers System",
+        "links": [
+          {
+            "rel": "self",
+            "uri": "http://dme.charess.org:8082/openmrs/ws/rest/v1/ws/rest/v1/role/ef9e3d84-f55a-4e89-b2eb-634eeb04c0c9"
+          }
+        ],
+        "uuid": "ef9e3d84-f55a-4e89-b2eb-634eeb04c0c9"
+      },
+      {
+        "display": "Application: Configures Appointment Scheduling",
+        "links": [
+          {
+            "rel": "self",
+            "uri": "http://dme.charess.org:8082/openmrs/ws/rest/v1/ws/rest/v1/role/9de75d88-89ac-41e4-a279-b4f26d1e9de7"
+          }
+        ],
+        "uuid": "9de75d88-89ac-41e4-a279-b4f26d1e9de7"
+      },
+      {
+        "display": "Application: Configures Forms",
+        "links": [
+          {
+            "rel": "self",
+            "uri": "http://dme.charess.org:8082/openmrs/ws/rest/v1/ws/rest/v1/role/36340abc-4faa-4b02-8abb-e998fa0fdae2"
+          }
+        ],
+        "uuid": "36340abc-4faa-4b02-8abb-e998fa0fdae2"
+      },
+      {
+        "display": "Application: Configures Metadata",
+        "links": [
+          {
+            "rel": "self",
+            "uri": "http://dme.charess.org:8082/openmrs/ws/rest/v1/ws/rest/v1/role/41c6fc7c-6c9e-4927-8f45-02cd0b3ac0ce"
+          }
+        ],
+        "uuid": "41c6fc7c-6c9e-4927-8f45-02cd0b3ac0ce"
+      },
+      {
+        "display": "Application: Edits Existing Encounters",
+        "links": [
+          {
+            "rel": "self",
+            "uri": "http://dme.charess.org:8082/openmrs/ws/rest/v1/ws/rest/v1/role/b137e198-5459-41a5-bdf9-4aa9bfa929d8"
+          }
+        ],
+        "uuid": "b137e198-5459-41a5-bdf9-4aa9bfa929d8"
+      },
+      {
+        "display": "Application: Enters ADT Events",
+        "links": [
+          {
+            "rel": "self",
+            "uri": "http://dme.charess.org:8082/openmrs/ws/rest/v1/ws/rest/v1/role/58289e89-fad6-41ba-b19f-c2ebdb6a87de"
+          }
+        ],
+        "uuid": "58289e89-fad6-41ba-b19f-c2ebdb6a87de"
+      },
+      {
+        "display": "Application: Enters Vitals",
+        "links": [
+          {
+            "rel": "self",
+            "uri": "http://dme.charess.org:8082/openmrs/ws/rest/v1/ws/rest/v1/role/62d2cb2c-9031-42a9-ab0c-266ae3d8cd0a"
+          }
+        ],
+        "uuid": "62d2cb2c-9031-42a9-ab0c-266ae3d8cd0a"
+      },
+      {
+        "display": "Application: Has Super User Privileges",
+        "links": [
+          {
+            "rel": "self",
+            "uri": "http://dme.charess.org:8082/openmrs/ws/rest/v1/ws/rest/v1/role/d0387b82-deac-45ac-81ad-5ce771be51c2"
+          }
+        ],
+        "uuid": "d0387b82-deac-45ac-81ad-5ce771be51c2"
+      },
+      {
+        "display": "Application: Manages Atlas",
+        "links": [
+          {
+            "rel": "self",
+            "uri": "http://dme.charess.org:8082/openmrs/ws/rest/v1/ws/rest/v1/role/9723e009-b870-4003-be38-7ccbb9b193d8"
+          }
+        ],
+        "uuid": "9723e009-b870-4003-be38-7ccbb9b193d8"
+      },
+      {
+        "display": "Application: Manages Provider Schedules",
+        "links": [
+          {
+            "rel": "self",
+            "uri": "http://dme.charess.org:8082/openmrs/ws/rest/v1/ws/rest/v1/role/107f0161-5567-4b6e-84e0-42f09c410ae0"
+          }
+        ],
+        "uuid": "107f0161-5567-4b6e-84e0-42f09c410ae0"
+      },
+      {
+        "display": "Application: Records Allergies",
+        "links": [
+          {
+            "rel": "self",
+            "uri": "http://dme.charess.org:8082/openmrs/ws/rest/v1/ws/rest/v1/role/1e717a47-7373-42df-a52b-1474cc0d8f9b"
+          }
+        ],
+        "uuid": "1e717a47-7373-42df-a52b-1474cc0d8f9b"
+      },
+      {
+        "display": "Application: Registers Patients",
+        "links": [
+          {
+            "rel": "self",
+            "uri": "http://dme.charess.org:8082/openmrs/ws/rest/v1/ws/rest/v1/role/23dac449-8bce-4e11-8aea-6ca5806ba5a6"
+          }
+        ],
+        "uuid": "23dac449-8bce-4e11-8aea-6ca5806ba5a6"
+      },
+      {
+        "display": "Application: Requests Appointments",
+        "links": [
+          {
+            "rel": "self",
+            "uri": "http://dme.charess.org:8082/openmrs/ws/rest/v1/ws/rest/v1/role/a945cf72-2f25-4bf1-bfcd-956d383b84fe"
+          }
+        ],
+        "uuid": "a945cf72-2f25-4bf1-bfcd-956d383b84fe"
+      },
+      {
+        "display": "Application: Schedules And Overbooks Appointments",
+        "links": [
+          {
+            "rel": "self",
+            "uri": "http://dme.charess.org:8082/openmrs/ws/rest/v1/ws/rest/v1/role/b835e8da-fd71-410b-8fc3-a129ea16598c"
+          }
+        ],
+        "uuid": "b835e8da-fd71-410b-8fc3-a129ea16598c"
+      },
+      {
+        "display": "Application: Schedules Appointments",
+        "links": [
+          {
+            "rel": "self",
+            "uri": "http://dme.charess.org:8082/openmrs/ws/rest/v1/ws/rest/v1/role/bc881ce8-79f7-432f-8cd3-495c1a2d6228"
+          }
+        ],
+        "uuid": "bc881ce8-79f7-432f-8cd3-495c1a2d6228"
+      },
+      {
+        "display": "Application: Sees Appointment Schedule",
+        "links": [
+          {
+            "rel": "self",
+            "uri": "http://dme.charess.org:8082/openmrs/ws/rest/v1/ws/rest/v1/role/2f6345da-f58f-4cc2-b5a6-61517ef980ac"
+          }
+        ],
+        "uuid": "2f6345da-f58f-4cc2-b5a6-61517ef980ac"
+      },
+      {
+        "display": "Application: Uses Capture Vitals App",
+        "links": [
+          {
+            "rel": "self",
+            "uri": "http://dme.charess.org:8082/openmrs/ws/rest/v1/ws/rest/v1/role/70bf02bb-927b-446b-a71a-6082b367b3c2"
+          }
+        ],
+        "uuid": "70bf02bb-927b-446b-a71a-6082b367b3c2"
+      },
+      {
+        "display": "Application: Uses Patient Summary",
+        "links": [
+          {
+            "rel": "self",
+            "uri": "http://dme.charess.org:8082/openmrs/ws/rest/v1/ws/rest/v1/role/1681d48d-227d-4028-8353-24f1f4686a67"
+          }
+        ],
+        "uuid": "1681d48d-227d-4028-8353-24f1f4686a67"
+      },
+      {
+        "display": "Application: View Reports",
+        "links": [
+          {
+            "rel": "self",
+            "uri": "http://dme.charess.org:8082/openmrs/ws/rest/v1/ws/rest/v1/role/0385c34f-f4b9-402f-b2b7-e39036ec11ec"
+          }
+        ],
+        "uuid": "0385c34f-f4b9-402f-b2b7-e39036ec11ec"
+      },
+      {
+        "display": "Application: Writes Clinical Notes",
+        "links": [
+          {
+            "rel": "self",
+            "uri": "http://dme.charess.org:8082/openmrs/ws/rest/v1/ws/rest/v1/role/0febb02d-f810-4886-a093-e91cf4862f8c"
+          }
+        ],
+        "uuid": "0febb02d-f810-4886-a093-e91cf4862f8c"
+      },
+      {
+        "display": "Authenticated",
+        "links": [
+          {
+            "rel": "self",
+            "uri": "http://dme.charess.org:8082/openmrs/ws/rest/v1/ws/rest/v1/role/f7fd42ef-880e-40c5-972d-e4ae7c990de2"
+          }
+        ],
+        "uuid": "f7fd42ef-880e-40c5-972d-e4ae7c990de2"
+      },
+      {
+        "display": "Organizational: Doctor",
+        "links": [
+          {
+            "rel": "self",
+            "uri": "http://dme.charess.org:8082/openmrs/ws/rest/v1/ws/rest/v1/role/06061426-a662-4c9b-9e8c-16c1a88f41c5"
+          }
+        ],
+        "uuid": "06061426-a662-4c9b-9e8c-16c1a88f41c5"
+      },
+      {
+        "display": "Organizational: Hospital Administrator",
+        "links": [
+          {
+            "rel": "self",
+            "uri": "http://dme.charess.org:8082/openmrs/ws/rest/v1/ws/rest/v1/role/a50619de-15e0-4a41-88c6-a1cbaf958316"
+          }
+        ],
+        "uuid": "a50619de-15e0-4a41-88c6-a1cbaf958316"
+      },
+      {
+        "display": "Organizational: Nurse",
+        "links": [
+          {
+            "rel": "self",
+            "uri": "http://dme.charess.org:8082/openmrs/ws/rest/v1/ws/rest/v1/role/f21f3027-738f-443c-a660-1558bc82c764"
+          }
+        ],
+        "uuid": "f21f3027-738f-443c-a660-1558bc82c764"
+      },
+      {
+        "display": "Organizational: Registration Clerk",
+        "links": [
+          {
+            "rel": "self",
+            "uri": "http://dme.charess.org:8082/openmrs/ws/rest/v1/ws/rest/v1/role/d802544f-6c95-4f25-98b5-d3a8223c287a"
+          }
+        ],
+        "uuid": "d802544f-6c95-4f25-98b5-d3a8223c287a"
+      },
+      {
+        "display": "Organizational: System Administrator",
+        "links": [
+          {
+            "rel": "self",
+            "uri": "http://dme.charess.org:8082/openmrs/ws/rest/v1/ws/rest/v1/role/30e5a6c1-d91a-4e01-b5f8-ea7b560525ff"
+          }
+        ],
+        "uuid": "30e5a6c1-d91a-4e01-b5f8-ea7b560525ff"
+      },
+      {
+        "display": "Privilege Level: Full",
+        "links": [
+          {
+            "rel": "self",
+            "uri": "http://dme.charess.org:8082/openmrs/ws/rest/v1/ws/rest/v1/role/ab2160f6-0941-430c-9752-6714353fbd3c"
+          }
+        ],
+        "uuid": "ab2160f6-0941-430c-9752-6714353fbd3c"
+      },
+      {
+        "display": "Provider",
+        "links": [
+          {
+            "rel": "self",
+            "uri": "http://dme.charess.org:8082/openmrs/ws/rest/v1/ws/rest/v1/role/8d94f280-c2cc-11de-8d13-0010c6dffd0f"
+          }
+        ],
+        "uuid": "8d94f280-c2cc-11de-8d13-0010c6dffd0f"
+      },
+      {
+        "display": "System Developer",
+        "links": [
+          {
+            "rel": "self",
+            "uri": "http://dme.charess.org:8082/openmrs/ws/rest/v1/ws/rest/v1/role/8d94f852-c2cc-11de-8d13-0010c6dffd0f"
+          }
+        ],
+        "uuid": "8d94f852-c2cc-11de-8d13-0010c6dffd0f"
+      },
+      {
+        "display": "View Reports",
+        "links": [
+          {
+            "rel": "self",
+            "uri": "http://dme.charess.org:8082/openmrs/ws/rest/v1/ws/rest/v1/role/ff510429-87d2-4d16-a760-bdb2a6c21c6f"
+          }
+        ],
+        "uuid": "ff510429-87d2-4d16-a760-bdb2a6c21c6f"
+      }
+    ]
+  }
+]

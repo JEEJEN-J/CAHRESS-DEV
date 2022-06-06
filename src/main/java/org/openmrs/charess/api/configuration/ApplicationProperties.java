@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 public class ApplicationProperties {
 
     @Value("${configuration.protocol}")
-    public String protocole;
+    public String protocol;
 
     @Value("${configuration.host}")
     public String host;
@@ -22,6 +22,7 @@ public class ApplicationProperties {
     }
 
     public String getBaseUrl() {
-        return protocole + "://" + host + ":" + port + "/" + api;
+        return protocol + "://" + host + ":" + port + "/" + api;
     }
+
 }

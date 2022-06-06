@@ -13,6 +13,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.io.IOException;
 import java.util.Collections;
 
 @RestController
@@ -32,38 +34,43 @@ public class UserController {
 
     @Operation(summary = "Filtrez rapidement les utilisateurs avec des paramètres de requête donnés. Ajoutez un paramètre includeAll=truepour récupérer également les utilisateurs désactivés. Renvoie un 404 Not Foundstatut si l'utilisateur n'existe pas. Si vous n'êtes pas connecté pour effectuer cette action, un 401 Unauthorized état est renvoyé.")
     @RequestMapping(method = RequestMethod.GET)
-    public ResponseEntity<?> getUsers() throws ParseException {
+    public ResponseEntity<?> getUsers() {
         Object usersData = userService.getAllUsers();
-        StringBuilder usersBuild = new StringBuilder(usersData.toString().substring(1, usersData.toString().length() - 1));
-        JSONParser parser = new JSONParser();
-        JSONObject usersJSON = new JSONObject(parser.parse(usersBuild.toString()).toString());
+        JSONArray jsonArray = new JSONArray(usersData.toString());
+        JSONObject usersJSON = jsonArray.getJSONObject(0);
         return ResponseEntity.ok(usersJSON.toString());
     }
 
-    @Operation(summary = "Le jeton de session est récupéré à l'aide de l'authentification de base sur le point de /sessionterminaison.")
+
+    @RequestMapping(value = "/logout", method = RequestMethod.GET)
+    public ResponseEntity<?> logout() throws IOException {
+        Object usersData = userService.logout();
+        JSONArray jsonArray = new JSONArray(usersData.toString());
+        return ResponseEntity.ok(jsonArray.toString());
+    }
+
+
+    @Operation(summary = "Le jeton de session est récupéré à l'aide de l'authentification de base sur le point de /session terminaison.")
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public ResponseEntity<?> getUser(@RequestParam("username") String username,
-                                     @RequestParam("password") String password) throws ParseException {
+                                     @RequestParam("password") String password) {
+
         HttpHeaders textPlainHeaders = new HttpHeaders();
         textPlainHeaders.setContentType(MediaType.TEXT_PLAIN);
-        Object object = userService.authenticate(username, password);
 
-        JSONParser parser = new JSONParser();
+        Object object = userService.authenticate(username, password);
+        JSONArray sessonJson = new JSONArray(object.toString());
+
+        JSONObject jsonObject = sessonJson.getJSONObject(0).getJSONObject("user");
 
         Object providers = providerService.allProviders();
-        StringBuilder providerBuilders = new StringBuilder(providers.toString().substring(1, providers.toString().length() - 1));
-        JSONObject providersJSON = new JSONObject(parser.parse(providerBuilders.toString()).toString());
-
-        JSONArray jsonArray = providersJSON.getJSONArray("results");
+        JSONArray jsonArray = new JSONArray(providers.toString()).getJSONObject(0).getJSONArray("results");
 
         String providerIdentifier = "";
-        JSONObject jsonProvider = null;
-        System.out.println(object.toString().length());
-        JSONObject jsonObject = new JSONObject(object.toString().substring(1, object.toString().length() - 1));
+        JSONObject jsonProvider;
 
         for (int i = 0; i < jsonArray.length(); i++) {
             providerIdentifier = (jsonArray.getJSONObject(i).get("display").toString().split("-"))[0];
-            System.out.println(providerIdentifier.trim() + " : " + username);
             jsonProvider = jsonArray.getJSONObject(i);
             if (username.equalsIgnoreCase("admin") && (providerIdentifier.trim().equalsIgnoreCase("UNKNOWN"))) {
                 jsonObject.append("provider", jsonProvider);

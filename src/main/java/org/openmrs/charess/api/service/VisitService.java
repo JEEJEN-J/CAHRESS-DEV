@@ -18,6 +18,7 @@ public class VisitService {
         List<?> objects = null;
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/visit", "POST");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             objects = Http.postObject(httpURLConnection, visit);
         } catch (Exception e) {
             e.printStackTrace();

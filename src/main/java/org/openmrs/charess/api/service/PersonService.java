@@ -21,6 +21,7 @@ public class PersonService {
         List<?> objects = null;
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/person", "POST");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             objects = Http.postObject(httpURLConnection, person);
         } catch (Exception e) {
             e.printStackTrace();
@@ -32,6 +33,7 @@ public class PersonService {
         List<?> objects = null;
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/person/" + uuid + "/name", "POST");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             objects = Http.postObject(httpURLConnection, personName);
         } catch (Exception e) {
             e.printStackTrace();
@@ -43,6 +45,7 @@ public class PersonService {
         List<?> objects = null;
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/person/" + uuid + "/address", "POST");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             objects = Http.postObject(httpURLConnection, personAddress);
         } catch (Exception e) {
             e.printStackTrace();
@@ -54,6 +57,7 @@ public class PersonService {
         List<?> objects = null;
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/person/" + uuid + "/attribute", "POST");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             objects = Http.postObject(httpURLConnection, personAttribute);
         } catch (Exception e) {
             e.printStackTrace();
@@ -65,6 +69,7 @@ public class PersonService {
         List<?> objects = null;
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/personattributetype", "POST");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             objects = Http.postObject(httpURLConnection, personattributetype);
         } catch (Exception e) {
             e.printStackTrace();
@@ -76,6 +81,7 @@ public class PersonService {
         List<?> persons = new ArrayList<>();
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/person/" + uuid, "GET");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             persons = Http.getObject(httpURLConnection);
@@ -89,6 +95,7 @@ public class PersonService {
         List<?> persons = new ArrayList<>();
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/person/" + uuid + "/name", "GET");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             persons = Http.getObject(httpURLConnection);
@@ -102,6 +109,7 @@ public class PersonService {
         List<?> persons = new ArrayList<>();
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/person/" + uuid + "/address", "GET");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             persons = Http.getObject(httpURLConnection);
@@ -115,6 +123,7 @@ public class PersonService {
         List<?> persons = new ArrayList<>();
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/person/" + uuid + "/attribute", "GET");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             persons = Http.getObject(httpURLConnection);
@@ -128,6 +137,7 @@ public class PersonService {
         List<?> persons = new ArrayList<>();
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/person/" + parent_uuid + "/name/" + uuid, "GET");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             persons = Http.getObject(httpURLConnection);
@@ -141,6 +151,7 @@ public class PersonService {
         List<?> persons = new ArrayList<>();
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/person/" + parent_uuid + "/address/" + uuid, "GET");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             persons = Http.getObject(httpURLConnection);
@@ -154,6 +165,7 @@ public class PersonService {
         List<?> persons = new ArrayList<>();
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/person/" + parent_uuid + "/attribute/" + uuid, "GET");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             persons = Http.getObject(httpURLConnection);
@@ -167,6 +179,7 @@ public class PersonService {
         List<?> persons = new ArrayList<>();
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/personattributetype/" + uuid, "GET");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());
             persons = Http.getObject(httpURLConnection);
@@ -180,6 +193,7 @@ public class PersonService {
         List<?> objects = null;
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/person/" + uuid, "POST");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             objects = Http.postObject(httpURLConnection, person);
         } catch (Exception e) {
             e.printStackTrace();
@@ -191,6 +205,7 @@ public class PersonService {
         List<?> objects = null;
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/person/" + parent_uuid + "/name/" + uuid, "POST");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             objects = Http.postObject(httpURLConnection, personName);
         } catch (Exception e) {
             e.printStackTrace();
@@ -202,6 +217,7 @@ public class PersonService {
         List<?> objects = null;
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/person/" + parent_uuid + "/address/" + uuid, "POST");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             objects = Http.postObject(httpURLConnection, personAddress);
         } catch (Exception e) {
             e.printStackTrace();
@@ -213,6 +229,7 @@ public class PersonService {
         List<?> objects = null;
         try {
             HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/person/" + parent_uuid + "/attribute/" + uuid, "POST");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             objects = Http.postObject(httpURLConnection, personAttribute);
         } catch (Exception e) {
             e.printStackTrace();

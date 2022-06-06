@@ -8,14 +8,17 @@
         <version>2.6.4</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.example</groupId>
-    <artifactId>APIO</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>APIO</name>
-    <description>APIO</description>
+
+    <groupId>com.charess.org</groupId>
+    <artifactId>OpenMRS-API-Middleware</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <name>OpenMRS-API-Middleware</name>
+    <description>OpenMRS-API-Middleware</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>

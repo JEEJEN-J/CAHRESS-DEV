@@ -1,23 +1,21 @@
 package org.openmrs.charess.api.configuration;
 
-import org.json.JSONObject;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class Http {
+
+    public static HttpURLConnection httpURLConnection = null;
 
     /**
      * USER AUTHENTIFICATION
      */
     public static HttpURLConnection getHttpConnection(String url, String type) {
-        HttpURLConnection httpURLConnection = null;
+         httpURLConnection = null;
         try {
             URL uri = new URL(url);
             httpURLConnection = (HttpURLConnection) uri.openConnection();
@@ -30,6 +28,16 @@ public class Http {
             httpURLConnection.setRequestProperty("Content-Type", "application/json");
         } catch (Exception e) {
             e.getSuppressed();
+        }
+        return httpURLConnection;
+    }
+
+
+    public static HttpURLConnection deconnection(){
+        try {
+            httpURLConnection.disconnect();
+        }catch (Exception e){
+            e.printStackTrace();
         }
         return httpURLConnection;
     }

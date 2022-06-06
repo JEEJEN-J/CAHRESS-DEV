@@ -3,7 +3,7 @@ package org.openmrs.charess.api.configuration;
 import java.net.Authenticator;
 import java.net.PasswordAuthentication;
 
-public class Authenticate extends Thread {
+public class Authenticate {
 
     private String username;
     private String password;
@@ -21,14 +21,19 @@ public class Authenticate extends Thread {
         this.passwordAuthentication = passwordAuthentication;
     }
 
-    @Override
-    public void run() {
-        Authenticator.setDefault(new Authenticator() {
+    public void start() {
+        Authenticator authenticator = new Authenticator() {
             protected PasswordAuthentication getPasswordAuthentication() {
                 passwordAuthentication = new PasswordAuthentication(username, password.toCharArray());
                 return passwordAuthentication;
             }
-        });
+        };
+        System.out.println("Authenticator : " + authenticator);
+        Authenticator.setDefault(authenticator);
+    }
+
+    public void stop(){
+        Authenticator.setDefault(null);
     }
 
     public String getUsername() {

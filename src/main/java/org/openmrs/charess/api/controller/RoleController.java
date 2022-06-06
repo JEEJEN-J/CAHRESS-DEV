@@ -1,7 +1,9 @@
 package org.openmrs.charess.api.controller;
 
+import org.json.JSONArray;
 import org.openmrs.charess.api.service.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -22,8 +24,10 @@ public class RoleController {
     }
 
     @RequestMapping(method = RequestMethod.GET)
-    public List<Object> getRoles() {
-        return roleService.getAllRoles();
+    public ResponseEntity<?> getRoles() {
+        Object object = roleService.getAllRoles();
+        JSONArray jsonArray = new JSONArray(object.toString());
+        return ResponseEntity.ok(jsonArray.toString());
     }
 
 
