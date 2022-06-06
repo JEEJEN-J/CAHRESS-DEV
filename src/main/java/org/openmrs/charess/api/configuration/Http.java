@@ -33,16 +33,6 @@ public class Http {
     }
 
 
-    public static HttpURLConnection deconnection(){
-        try {
-            httpURLConnection.disconnect();
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-        return httpURLConnection;
-    }
-
-
     /**
      * GET BY ALL SERVICES
      */
@@ -90,7 +80,6 @@ public class Http {
                     objects.add(responseLine);
             } catch (java.io.IOException ioe) {
                 ioe.printStackTrace();
-//                    return Collections.singletonList("BAD_REQUEST");
             }
         } catch (IOException e) {
             e.printStackTrace();
