@@ -60,7 +60,7 @@ public class EncounterService {
     public List<?> getEncounterByPatient(String patientUUID, String encounterUUID) {
         List<?> encounter = new ArrayList<>();
         try {
-            HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/encounter?patient=" + patientUUID + "&encounterType=" + encounterUUID + "&all=true", "GET");
+            HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/encounter?patient=" + patientUUID + "&encounterType=" + encounterUUID + "", "GET");
             httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
             if (httpURLConnection.getResponseCode() != 200)
                 return Collections.singletonList(httpURLConnection.getResponseCode());

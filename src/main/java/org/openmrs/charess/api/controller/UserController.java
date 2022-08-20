@@ -98,4 +98,5 @@ public class UserController {
         JSONObject jsonObject = new JSONObject(parser.parse(builder.toString()).toString());
         return ResponseEntity.ok(jsonObject.toString());
     }
+
 }

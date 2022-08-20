@@ -15,6 +15,9 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
+
 
 @RestController
 @RequestMapping("/openmrs/ws/rest/v1/patient")
@@ -44,13 +47,17 @@ public class PatientController {
 
         StringBuilder builder = new StringBuilder();
 
-        GeneratedIdentifier generatedIdentifier = new GeneratedIdentifier();
-        String identifier = "100" + generatedIdentifier.identifierToDigits();
-        String digits = "";
+        int value = ThreadLocalRandom.current().nextInt(100, 10000);
 
+        GeneratedIdentifier generatedIdentifier = new GeneratedIdentifier();
+        String identifier = value + generatedIdentifier.identifierToDigits();
+        String digits = "";
+        int size = 0;
         do {
             digits = generatedIdentifier.getValidIdentifier(identifier);
-        } while (patientService.getPatientByIdentifier(digits).size() != 1);
+            size = patientService.getPatientByIdentifier(digits).size();
+            System.out.println("Digits : " + digits + ", size : " + size);
+        } while (size != 1);
 
         JSONObject jsonObject;
         JSONObject patientJSON;
@@ -60,12 +67,19 @@ public class PatientController {
             String obj = parser.parse(responseBody).toString();
             jsonObject = new JSONObject(obj);
 
+            System.out.println("jsonObject : " + jsonObject);
+
             StringBuilder patientBuilder = new StringBuilder(jsonObject.get("patient").toString().substring(1, jsonObject.get("patient").toString().length() - 1));
             patientJSON = new JSONObject(parser.parse(patientBuilder.toString()).toString());
+
+            System.out.println("patientJSON : " + patientJSON);
 
 
             String identifiers = patientJSON.get("identifiers").toString().substring(1, patientJSON.get("identifiers").toString().length() - 1);
             JSONObject jsonIdent = new JSONObject(parser.parse(identifiers).toString());
+
+            System.out.println("jsonIdent : " + jsonIdent);
+
 
             String location = jsonIdent.get("location").toString();
 
@@ -77,13 +91,20 @@ public class PatientController {
 
             JSONObject json = new JSONObject(builder.toString());
             patientJSON.append("identifiers", json);
+
+            System.out.println("With identifiers : " + patientJSON);
+
             jsonObject.remove("patient");
         } catch (Exception ex) {
             ex.printStackTrace();
             return ResponseEntity.ok(ex.getCause());
         }
 
+        System.out.println("Patient for save : " + patientJSON);
         Object object = patientService.createPatient(patientJSON.toString());
+
+        System.out.println("object : " + object.toString());
+
 
         StringBuilder patientsBuilders = new StringBuilder(object.toString().substring(1, object.toString().length() - 1));
         JSONObject objson = new JSONObject(parser.parse(patientsBuilders.toString()).toString());
@@ -105,7 +126,7 @@ public class PatientController {
         }
 
         jsonObject.put("obs", jsonArrayObs);
-        System.out.println("jsonObject : "+jsonObject);
+        System.out.println("jsonObject : " + jsonObject);
 
         Object encounterData = encounterService.createEncounter(jsonObject.toString());
         StringBuilder encounterBuild = new StringBuilder(encounterData.toString().substring(1, encounterData.toString().length() - 1));

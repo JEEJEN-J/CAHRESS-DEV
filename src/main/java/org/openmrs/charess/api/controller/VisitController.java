@@ -1,5 +1,6 @@
 package org.openmrs.charess.api.controller;
 
+import io.swagger.v3.oas.annotations.Operation;
 import net.minidev.json.parser.JSONParser;
 import org.json.JSONObject;
 import org.openmrs.charess.api.service.VisitService;
@@ -43,6 +44,29 @@ public class VisitController {
         }
         System.out.println("VISIT CREATED : " + jsonObject);
 
+        return ResponseEntity.ok(jsonObject.toString());
+    }
+
+    @Operation(summary = "Récupérer une visite par son UUID. Renvoie un 404 Not Found statut si la visite n'existe pas dans le système. Si l'utilisateur n'est pas connecté pour effectuer cette action, un 401 Unauthorized état est renvoyé.")
+    @RequestMapping(value = "/{uuid}", method = RequestMethod.GET)
+    public ResponseEntity<?> getVisitUuid(@PathVariable("uuid") String uuid) {
+        Object object = visitService.findByUuid(uuid);
+        JSONObject jsonObject = new JSONObject(object.toString().substring(1, object.toString().length() - 1));
+        return ResponseEntity.ok(jsonObject.toString());
+    }
+
+    @Operation(summary = "Récupérer la visite active par UUID du patient. Renvoie un 404 Not Found statut si la visite n'existe pas dans le système. Si l'utilisateur n'est pas connecté pour effectuer cette action, un 401 Unauthorized état est renvoyé.")
+    @RequestMapping(value = "/patient/{uuid}", method = RequestMethod.GET)
+    public ResponseEntity<?> getActiveVisit(@PathVariable("uuid") String uuid) {
+        Object object = visitService.findActiveVisit(uuid);
+        JSONObject jsonObject = new JSONObject(object.toString().substring(1, object.toString().length() - 1));
+        return ResponseEntity.ok(jsonObject.toString());
+    }
+
+    @RequestMapping(value = "/{uuid}", method = RequestMethod.PUT)
+    public ResponseEntity<?> closeVisit(@RequestBody() String body, @PathVariable("uuid") String uuid) {
+        Object object = visitService.closeVisit(uuid, body);
+        JSONObject jsonObject = new JSONObject(object.toString().substring(1, object.toString().length() - 1));
         return ResponseEntity.ok(jsonObject.toString());
     }
 }

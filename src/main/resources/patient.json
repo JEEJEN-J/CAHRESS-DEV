@@ -1,6 +1,55 @@
 {
-  "startDatetime": "2022-05-31T14:25:51.600Z",
-  "patient": "5e1fc3b9-aa34-4514-9da3-6c65b074ede0",
-  "location": "8d6c993e-c2cc-11de-8d13-0010c6dffd0f",
-  "visitType": "7b0f5697-27e3-40c4-8bae-f4049abfb4ed"
+  "results": [
+    {
+      "startDatetime": "2022-08-18T15:15:40.000-0400",
+      "stopDatetime": null,
+      "display": "Facility Visit @ Unknown Location - 18/08/2022 15:15",
+      "resourceVersion": "1.9",
+      "uuid": "913eb7fe-805a-4f6d-be00-ac4c26280258",
+      "visitType": {
+        "display": "Facility Visit",
+        "links": [
+          {
+            "rel": "self",
+            "uri": "http://192.168.1.219:8080/openmrs/ws/rest/v1/visittype/7b0f5697-27e3-40c4-8bae-f4049abfb4ed"
+          }
+        ],
+        "uuid": "7b0f5697-27e3-40c4-8bae-f4049abfb4ed"
+      },
+      "encounters": [],
+      "patient": {
+        "display": "432123 - Matana Alcenat",
+        "links": [
+          {
+            "rel": "self",
+            "uri": "http://192.168.1.219:8080/openmrs/ws/rest/v1/patient/9ce0227f-1fff-48c7-b68f-fa9ff596e1d3"
+          }
+        ],
+        "uuid": "9ce0227f-1fff-48c7-b68f-fa9ff596e1d3"
+      },
+      "location": {
+        "display": "Unknown Location",
+        "links": [
+          {
+            "rel": "self",
+            "uri": "http://192.168.1.219:8080/openmrs/ws/rest/v1/location/8d6c993e-c2cc-11de-8d13-0010c6dffd0f"
+          }
+        ],
+        "uuid": "8d6c993e-c2cc-11de-8d13-0010c6dffd0f"
+      },
+      "attributes": [],
+      "voided": false,
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://192.168.1.219:8080/openmrs/ws/rest/v1/visit/913eb7fe-805a-4f6d-be00-ac4c26280258"
+        },
+        {
+          "rel": "full",
+          "uri": "http://192.168.1.219:8080/openmrs/ws/rest/v1/visit/913eb7fe-805a-4f6d-be00-ac4c26280258?v=full"
+        }
+      ],
+      "indication": null
+    }
+  ]
 }
