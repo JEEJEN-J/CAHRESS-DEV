@@ -56,6 +56,20 @@ public class VisitService {
         return user;
     }
 
+    public List<?> findAllVisitsByPatientUUID(String patientUUID) {
+        List<?> user = new ArrayList<>();
+        try {
+            HttpURLConnection httpURLConnection = Http.getHttpConnection(applicationProperties.getBaseUrl() + "/visit?includeInactive=true&v=default&limit=3&patient=" + patientUUID, "GET");
+            httpURLConnection.setRequestProperty("Authorization", "Basic " + UserService.session);
+            if (httpURLConnection.getResponseCode() != 200)
+                return Collections.singletonList(httpURLConnection.getResponseCode());
+            user = Http.getObject(httpURLConnection);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return user;
+    }
+
     public List<?> closeVisit(String visitUUID, String obj) {
         List<?> objects = null;
         try {

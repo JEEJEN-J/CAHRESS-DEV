@@ -1,38 +1,44 @@
 {
+  "links": [
+    {
+      "rel": "next",
+      "uri": "http://192.168.1.221:8080/openmrs/ws/rest/v1/visit?includeInactive=true&v=default&limit=3&patient=35b08ba7-a2bc-4896-9f9d-e2b971575c71&startIndex=3"
+    }
+  ],
   "results": [
     {
-      "startDatetime": "2022-08-18T15:15:40.000-0400",
-      "stopDatetime": null,
-      "display": "Facility Visit @ Unknown Location - 18/08/2022 15:15",
+      "startDatetime": "2022-10-10T11:26:46.000-0400",
+      "stopDatetime": "2022-10-10T12:31:49.000-0400",
+      "display": "Facility Visit @ Unknown Location - 10/10/2022 11:26",
       "resourceVersion": "1.9",
-      "uuid": "913eb7fe-805a-4f6d-be00-ac4c26280258",
+      "uuid": "b986bd01-c2c7-4d26-85ca-1f7718e3e539",
       "visitType": {
         "display": "Facility Visit",
         "links": [
           {
             "rel": "self",
-            "uri": "http://192.168.1.219:8080/openmrs/ws/rest/v1/visittype/7b0f5697-27e3-40c4-8bae-f4049abfb4ed"
+            "uri": "http://192.168.1.221:8080/openmrshttp://192.168.1.221:8080/openmrs/ws/rest/v1/visittype/7b0f5697-27e3-40c4-8bae-f4049abfb4ed"
           }
         ],
         "uuid": "7b0f5697-27e3-40c4-8bae-f4049abfb4ed"
       },
       "encounters": [],
       "patient": {
-        "display": "432123 - Matana Alcenat",
+        "display": "0999898900 - Colbie Charles",
         "links": [
           {
             "rel": "self",
-            "uri": "http://192.168.1.219:8080/openmrs/ws/rest/v1/patient/9ce0227f-1fff-48c7-b68f-fa9ff596e1d3"
+            "uri": "http://192.168.1.221:8080/openmrshttp://192.168.1.221:8080/openmrs/ws/rest/v1/patient/35b08ba7-a2bc-4896-9f9d-e2b971575c71"
           }
         ],
-        "uuid": "9ce0227f-1fff-48c7-b68f-fa9ff596e1d3"
+        "uuid": "35b08ba7-a2bc-4896-9f9d-e2b971575c71"
       },
       "location": {
         "display": "Unknown Location",
         "links": [
           {
             "rel": "self",
-            "uri": "http://192.168.1.219:8080/openmrs/ws/rest/v1/location/8d6c993e-c2cc-11de-8d13-0010c6dffd0f"
+            "uri": "http://192.168.1.221:8080/openmrshttp://192.168.1.221:8080/openmrs/ws/rest/v1/location/8d6c993e-c2cc-11de-8d13-0010c6dffd0f"
           }
         ],
         "uuid": "8d6c993e-c2cc-11de-8d13-0010c6dffd0f"
@@ -42,11 +48,113 @@
       "links": [
         {
           "rel": "self",
-          "uri": "http://192.168.1.219:8080/openmrs/ws/rest/v1/visit/913eb7fe-805a-4f6d-be00-ac4c26280258"
+          "uri": "http://192.168.1.221:8080/openmrshttp://192.168.1.221:8080/openmrs/ws/rest/v1/visit/b986bd01-c2c7-4d26-85ca-1f7718e3e539"
         },
         {
           "rel": "full",
-          "uri": "http://192.168.1.219:8080/openmrs/ws/rest/v1/visit/913eb7fe-805a-4f6d-be00-ac4c26280258?v=full"
+          "uri": "http://192.168.1.221:8080/openmrshttp://192.168.1.221:8080/openmrs/ws/rest/v1/visit/b986bd01-c2c7-4d26-85ca-1f7718e3e539?v=full"
+        }
+      ],
+      "indication": null
+    },
+    {
+      "startDatetime": "2022-10-10T11:08:21.000-0400",
+      "stopDatetime": "2022-10-10T11:26:37.000-0400",
+      "display": "Facility Visit @ Unknown Location - 10/10/2022 11:08",
+      "resourceVersion": "1.9",
+      "uuid": "3bfde831-510a-46cb-a47a-ce5171f824fa",
+      "visitType": {
+        "display": "Facility Visit",
+        "links": [
+          {
+            "rel": "self",
+            "uri": "http://192.168.1.221:8080/openmrshttp://192.168.1.221:8080/openmrs/ws/rest/v1/visittype/7b0f5697-27e3-40c4-8bae-f4049abfb4ed"
+          }
+        ],
+        "uuid": "7b0f5697-27e3-40c4-8bae-f4049abfb4ed"
+      },
+      "encounters": [],
+      "patient": {
+        "display": "0999898900 - Colbie Charles",
+        "links": [
+          {
+            "rel": "self",
+            "uri": "http://192.168.1.221:8080/openmrshttp://192.168.1.221:8080/openmrs/ws/rest/v1/patient/35b08ba7-a2bc-4896-9f9d-e2b971575c71"
+          }
+        ],
+        "uuid": "35b08ba7-a2bc-4896-9f9d-e2b971575c71"
+      },
+      "location": {
+        "display": "Unknown Location",
+        "links": [
+          {
+            "rel": "self",
+            "uri": "http://192.168.1.221:8080/openmrshttp://192.168.1.221:8080/openmrs/ws/rest/v1/location/8d6c993e-c2cc-11de-8d13-0010c6dffd0f"
+          }
+        ],
+        "uuid": "8d6c993e-c2cc-11de-8d13-0010c6dffd0f"
+      },
+      "attributes": [],
+      "voided": false,
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://192.168.1.221:8080/openmrshttp://192.168.1.221:8080/openmrs/ws/rest/v1/visit/3bfde831-510a-46cb-a47a-ce5171f824fa"
+        },
+        {
+          "rel": "full",
+          "uri": "http://192.168.1.221:8080/openmrshttp://192.168.1.221:8080/openmrs/ws/rest/v1/visit/3bfde831-510a-46cb-a47a-ce5171f824fa?v=full"
+        }
+      ],
+      "indication": null
+    },
+    {
+      "startDatetime": "2022-10-08T12:43:11.000-0400",
+      "stopDatetime": "2022-10-10T11:01:01.000-0400",
+      "display": "Facility Visit @ Unknown Location - 08/10/2022 12:43",
+      "resourceVersion": "1.9",
+      "uuid": "abec94df-88f4-44df-964a-ca52535db876",
+      "visitType": {
+        "display": "Facility Visit",
+        "links": [
+          {
+            "rel": "self",
+            "uri": "http://192.168.1.221:8080/openmrshttp://192.168.1.221:8080/openmrs/ws/rest/v1/visittype/7b0f5697-27e3-40c4-8bae-f4049abfb4ed"
+          }
+        ],
+        "uuid": "7b0f5697-27e3-40c4-8bae-f4049abfb4ed"
+      },
+      "encounters": [],
+      "patient": {
+        "display": "0999898900 - Colbie Charles",
+        "links": [
+          {
+            "rel": "self",
+            "uri": "http://192.168.1.221:8080/openmrshttp://192.168.1.221:8080/openmrs/ws/rest/v1/patient/35b08ba7-a2bc-4896-9f9d-e2b971575c71"
+          }
+        ],
+        "uuid": "35b08ba7-a2bc-4896-9f9d-e2b971575c71"
+      },
+      "location": {
+        "display": "Unknown Location",
+        "links": [
+          {
+            "rel": "self",
+            "uri": "http://192.168.1.221:8080/openmrshttp://192.168.1.221:8080/openmrs/ws/rest/v1/location/8d6c993e-c2cc-11de-8d13-0010c6dffd0f"
+          }
+        ],
+        "uuid": "8d6c993e-c2cc-11de-8d13-0010c6dffd0f"
+      },
+      "attributes": [],
+      "voided": false,
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://192.168.1.221:8080/openmrshttp://192.168.1.221:8080/openmrs/ws/rest/v1/visit/abec94df-88f4-44df-964a-ca52535db876"
+        },
+        {
+          "rel": "full",
+          "uri": "http://192.168.1.221:8080/openmrshttp://192.168.1.221:8080/openmrs/ws/rest/v1/visit/abec94df-88f4-44df-964a-ca52535db876?v=full"
         }
       ],
       "indication": null

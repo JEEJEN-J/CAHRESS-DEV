@@ -1,51 +1,363 @@
 {
-  "startDatetime": "2022-08-20T15:29:54.000-0400",
-  "stopDatetime": null,
-  "display": "Facility Visit @ Unknown Location - 20/08/2022 15:29",
+  "obs": [
+    {
+      "display": "Procédure histoire: resultas bla bla bla",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://200.2.133.226:8090/openmrs/ws/rest/v1/obs/3138326b-fb1d-4e74-810a-ebdf75f7911c"
+        }
+      ],
+      "uuid": "3138326b-fb1d-4e74-810a-ebdf75f7911c"
+    },
+    {
+      "display": "Frottis microscopique pour la tuberculose mois Fin de Rx group: 2022-10-01",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://200.2.133.226:8090/openmrs/ws/rest/v1/obs/6aa482ef-21b3-477a-a7bc-c56683a49117"
+        }
+      ],
+      "uuid": "6aa482ef-21b3-477a-a7bc-c56683a49117"
+    },
+    {
+      "display": "Procédure histoire Dépistage CA du Col groupe: 1 octobre 2022 12:07:00 EDT, Dépistage Çancer du col",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://200.2.133.226:8090/openmrs/ws/rest/v1/obs/6c25e315-d0a8-430e-9129-4c17a451447f"
+        }
+      ],
+      "uuid": "6c25e315-d0a8-430e-9129-4c17a451447f"
+    },
+    {
+      "display": "Procédure histoire Prostate cancer screening groupe: Le dépistage d'une tumeur maligne de la prostate, 1 octobre 2022 12:07:00 EDT",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://200.2.133.226:8090/openmrs/ws/rest/v1/obs/cb292ddc-27f5-45a6-883c-0b6f6d623278"
+        }
+      ],
+      "uuid": "cb292ddc-27f5-45a6-883c-0b6f6d623278"
+    },
+    {
+      "display": "Ordre actuel des médicaments cinq groupe: 2022-10-01, 1 octobre 2022 12:07:00 EDT",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://200.2.133.226:8090/openmrs/ws/rest/v1/obs/9abb064e-9ccf-431c-87de-fd4804313e79"
+        }
+      ],
+      "uuid": "9abb064e-9ccf-431c-87de-fd4804313e79"
+    },
+    {
+      "display": "Dose 1 groupe: Astrazeneca COVID-19 vaccine",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://200.2.133.226:8090/openmrs/ws/rest/v1/obs/bce9375d-91d9-45f4-88d9-5c5cd0c9f974"
+        }
+      ],
+      "uuid": "bce9375d-91d9-45f4-88d9-5c5cd0c9f974"
+    },
+    {
+      "display": "Dose 1 groupe: Astrazeneca COVID-19 vaccine",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://200.2.133.226:8090/openmrs/ws/rest/v1/obs/a28f7f80-ed85-4b9a-bb91-16b92f13e897"
+        }
+      ],
+      "uuid": "a28f7f80-ed85-4b9a-bb91-16b92f13e897"
+    },
+    {
+      "display": "Dose 1 groupe: Astrazeneca COVID-19 vaccine",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://200.2.133.226:8090/openmrs/ws/rest/v1/obs/269146d2-81bf-44e0-8e52-1e2cf2e009aa"
+        }
+      ],
+      "uuid": "269146d2-81bf-44e0-8e52-1e2cf2e009aa"
+    },
+    {
+      "display": "Dose 1 groupe: Astrazeneca COVID-19 vaccine",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://200.2.133.226:8090/openmrs/ws/rest/v1/obs/b649add2-3575-4c04-8ef8-5c2c438cc1f9"
+        }
+      ],
+      "uuid": "b649add2-3575-4c04-8ef8-5c2c438cc1f9"
+    },
+    {
+      "display": "Dose 1 groupe: Astrazeneca COVID-19 vaccine",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://200.2.133.226:8090/openmrs/ws/rest/v1/obs/44a7d42f-bc0b-4475-b06e-815f4c25b165"
+        }
+      ],
+      "uuid": "44a7d42f-bc0b-4475-b06e-815f4c25b165"
+    },
+    {
+      "display": "Dose 1 groupe: Astrazeneca COVID-19 vaccine",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://200.2.133.226:8090/openmrs/ws/rest/v1/obs/5132fc9d-4ae8-47f2-8f22-2e5df5c37444"
+        }
+      ],
+      "uuid": "5132fc9d-4ae8-47f2-8f22-2e5df5c37444"
+    },
+    {
+      "display": "Dose 2 groupe: Astrazeneca COVID-19 vaccine",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://200.2.133.226:8090/openmrs/ws/rest/v1/obs/2b3953cd-740a-4709-8207-02bd5a611bcf"
+        }
+      ],
+      "uuid": "2b3953cd-740a-4709-8207-02bd5a611bcf"
+    },
+    {
+      "display": "Dose 2 groupe: Astrazeneca COVID-19 vaccine",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://200.2.133.226:8090/openmrs/ws/rest/v1/obs/889345fa-90e7-47cd-82bb-2b28e2db8225"
+        }
+      ],
+      "uuid": "889345fa-90e7-47cd-82bb-2b28e2db8225"
+    },
+    {
+      "display": "Dose 2 groupe: Astrazeneca COVID-19 vaccine",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://200.2.133.226:8090/openmrs/ws/rest/v1/obs/c3941a64-ce1a-470a-a5f4-29567558f7af"
+        }
+      ],
+      "uuid": "c3941a64-ce1a-470a-a5f4-29567558f7af"
+    },
+    {
+      "display": "Dose 2 groupe: Astrazeneca COVID-19 vaccine",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://200.2.133.226:8090/openmrs/ws/rest/v1/obs/6a010d5e-10ac-4312-a4a7-624ad6b5ecb4"
+        }
+      ],
+      "uuid": "6a010d5e-10ac-4312-a4a7-624ad6b5ecb4"
+    },
+    {
+      "display": "Dose 2 groupe: Astrazeneca COVID-19 vaccine",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://200.2.133.226:8090/openmrs/ws/rest/v1/obs/a47347d0-589a-440b-9f62-1ca619fe5692"
+        }
+      ],
+      "uuid": "a47347d0-589a-440b-9f62-1ca619fe5692"
+    },
+    {
+      "display": "Dose 2 groupe: Astrazeneca COVID-19 vaccine",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://200.2.133.226:8090/openmrs/ws/rest/v1/obs/9a0178a4-b4a5-4224-86a8-245731c2d9a5"
+        }
+      ],
+      "uuid": "9a0178a4-b4a5-4224-86a8-245731c2d9a5"
+    },
+    {
+      "display": "Dose 4 groupe: Astrazeneca COVID-19 vaccine",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://200.2.133.226:8090/openmrs/ws/rest/v1/obs/1743e5a4-3635-4d43-b868-34a3120346fc"
+        }
+      ],
+      "uuid": "1743e5a4-3635-4d43-b868-34a3120346fc"
+    },
+    {
+      "display": "Dose 4 groupe: Astrazeneca COVID-19 vaccine",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://200.2.133.226:8090/openmrs/ws/rest/v1/obs/c9176dc1-973a-4f40-8b74-0d909e493acc"
+        }
+      ],
+      "uuid": "c9176dc1-973a-4f40-8b74-0d909e493acc"
+    },
+    {
+      "display": "Dose 4 groupe: Astrazeneca COVID-19 vaccine",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://200.2.133.226:8090/openmrs/ws/rest/v1/obs/840a67ea-f621-4585-b346-d1cd77cf9224"
+        }
+      ],
+      "uuid": "840a67ea-f621-4585-b346-d1cd77cf9224"
+    },
+    {
+      "display": "Dose 4 groupe: Astrazeneca COVID-19 vaccine",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://200.2.133.226:8090/openmrs/ws/rest/v1/obs/dad33fd2-270c-4dc2-b72d-22b296598b4a"
+        }
+      ],
+      "uuid": "dad33fd2-270c-4dc2-b72d-22b296598b4a"
+    },
+    {
+      "display": "Dose 4 groupe: Astrazeneca COVID-19 vaccine",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://200.2.133.226:8090/openmrs/ws/rest/v1/obs/b221cc0d-2963-42d3-92c2-2e01a5926bd2"
+        }
+      ],
+      "uuid": "b221cc0d-2963-42d3-92c2-2e01a5926bd2"
+    },
+    {
+      "display": "Dose 4 groupe: Astrazeneca COVID-19 vaccine",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://200.2.133.226:8090/openmrs/ws/rest/v1/obs/78966fa3-9a96-4943-b1d5-c293d7141610"
+        }
+      ],
+      "uuid": "78966fa3-9a96-4943-b1d5-c293d7141610"
+    },
+    {
+      "display": "Dose 3 groupe: Astrazeneca COVID-19 vaccine",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://200.2.133.226:8090/openmrs/ws/rest/v1/obs/b2ab883c-502b-4462-a301-ce75ff7a9b92"
+        }
+      ],
+      "uuid": "b2ab883c-502b-4462-a301-ce75ff7a9b92"
+    },
+    {
+      "display": "Dose 3 groupe: Astrazeneca COVID-19 vaccine",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://200.2.133.226:8090/openmrs/ws/rest/v1/obs/7674ae21-6c36-4367-bf1e-c2c37e7b8392"
+        }
+      ],
+      "uuid": "7674ae21-6c36-4367-bf1e-c2c37e7b8392"
+    },
+    {
+      "display": "Dose 3 groupe: Astrazeneca COVID-19 vaccine",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://200.2.133.226:8090/openmrs/ws/rest/v1/obs/ee17d7a0-1744-4751-bdcf-77a3f189fb7d"
+        }
+      ],
+      "uuid": "ee17d7a0-1744-4751-bdcf-77a3f189fb7d"
+    },
+    {
+      "display": "Dose 3 groupe: Astrazeneca COVID-19 vaccine",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://200.2.133.226:8090/openmrs/ws/rest/v1/obs/7ec1354c-79dd-4436-95de-76f40d349dd3"
+        }
+      ],
+      "uuid": "7ec1354c-79dd-4436-95de-76f40d349dd3"
+    },
+    {
+      "display": "Dose 3 groupe: Astrazeneca COVID-19 vaccine",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://200.2.133.226:8090/openmrs/ws/rest/v1/obs/c9ff8df5-1b8d-4b36-8313-9b9545536410"
+        }
+      ],
+      "uuid": "c9ff8df5-1b8d-4b36-8313-9b9545536410"
+    },
+    {
+      "display": "Dose 3 groupe: Astrazeneca COVID-19 vaccine",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://200.2.133.226:8090/openmrs/ws/rest/v1/obs/e75b8963-6695-4373-8afd-635420f40fe9"
+        }
+      ],
+      "uuid": "e75b8963-6695-4373-8afd-635420f40fe9"
+    }
+  ],
+  "display": "Saisie Première 01/10/2022",
   "resourceVersion": "1.9",
-  "uuid": "84f219bf-61ab-431a-89b5-8e4adfe9df5a",
-  "visitType": {
-    "display": "Facility Visit",
-    "links": [
-      {
-        "rel": "self",
-        "uri": "http://192.168.22.5:8080/openmrs/ws/rest/v1/visittype/7b0f5697-27e3-40c4-8bae-f4049abfb4ed"
-      }
-    ],
-    "uuid": "7b0f5697-27e3-40c4-8bae-f4049abfb4ed"
-  },
-  "encounters": null,
+  "encounterDatetime": "2022-10-01T12:07:54.000-0400",
+  "uuid": "a19b99ca-d0cb-4015-9b85-3df14d6d8a89",
+  "encounterProviders": [
+    {
+      "display": "Super User: Autres",
+      "links": [
+        {
+          "rel": "self",
+          "uri": "http://200.2.133.226:8090/openmrs/ws/rest/v1/encounter/a19b99ca-d0cb-4015-9b85-3df14d6d8a89/encounterprovider/4a40bba8-253c-41a6-b9bf-938b51a996e1"
+        }
+      ],
+      "uuid": "4a40bba8-253c-41a6-b9bf-938b51a996e1"
+    }
+  ],
+  "form": null,
   "patient": {
-    "display": "12222221111 - Laica charles",
+    "display": "Mc1382a - Mackendy Charles",
     "links": [
       {
         "rel": "self",
-        "uri": "http://192.168.22.5:8080/openmrs/ws/rest/v1/patient/381eb8a0-7c68-4001-86d6-d03e4cdca563"
+        "uri": "http://200.2.133.226:8090/openmrs/ws/rest/v1/patient/5f7cc906-39eb-434e-af90-04e504372353"
       }
     ],
-    "uuid": "381eb8a0-7c68-4001-86d6-d03e4cdca563"
+    "uuid": "5f7cc906-39eb-434e-af90-04e504372353"
   },
   "location": {
     "display": "Unknown Location",
     "links": [
       {
         "rel": "self",
-        "uri": "http://192.168.22.5:8080/openmrs/ws/rest/v1/location/8d6c993e-c2cc-11de-8d13-0010c6dffd0f"
+        "uri": "http://200.2.133.226:8090/openmrs/ws/rest/v1/location/8d6c993e-c2cc-11de-8d13-0010c6dffd0f"
       }
     ],
     "uuid": "8d6c993e-c2cc-11de-8d13-0010c6dffd0f"
   },
-  "attributes": [],
+  "orders": [],
   "voided": false,
   "links": [
     {
       "rel": "self",
-      "uri": "http://192.168.22.5:8080/openmrs/ws/rest/v1/visit/84f219bf-61ab-431a-89b5-8e4adfe9df5a"
+      "uri": "http://200.2.133.226:8090/openmrs/ws/rest/v1/encounter/a19b99ca-d0cb-4015-9b85-3df14d6d8a89"
     },
     {
       "rel": "full",
-      "uri": "http://192.168.22.5:8080/openmrs/ws/rest/v1/visit/84f219bf-61ab-431a-89b5-8e4adfe9df5a?v=full"
+      "uri": "http://200.2.133.226:8090/openmrs/ws/rest/v1/encounter/a19b99ca-d0cb-4015-9b85-3df14d6d8a89?v=full"
     }
   ],
-  "indication": null
+  "visit": {
+    "display": "Facility Visit @ Unknown Location - 01/10/2022 12:07",
+    "links": [
+      {
+        "rel": "self",
+        "uri": "http://200.2.133.226:8090/openmrs/ws/rest/v1/visit/4f8d3259-f78b-46fb-9484-ca25b7e5c830"
+      }
+    ],
+    "uuid": "4f8d3259-f78b-46fb-9484-ca25b7e5c830"
+  },
+  "encounterType": {
+    "display": "Saisie Première",
+    "links": [
+      {
+        "rel": "self",
+        "uri": "http://200.2.133.226:8090/openmrs/ws/rest/v1/encountertype/17536ba6-dd7c-4f58-8014-08c7cb798ac7"
+      }
+    ],
+    "uuid": "17536ba6-dd7c-4f58-8014-08c7cb798ac7"
+  }
 }

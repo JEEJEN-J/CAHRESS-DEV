@@ -63,6 +63,14 @@ public class VisitController {
         return ResponseEntity.ok(jsonObject.toString());
     }
 
+    @Operation(summary = "Récupérer les 3 dernieres visite par UUID du patient. Renvoie un 404 Not Found statut si la visite n'existe pas dans le système. Si l'utilisateur n'est pas connecté pour effectuer cette action, un 401 Unauthorized état est renvoyé.")
+    @RequestMapping(value = "/last/patient/{uuid}", method = RequestMethod.GET)
+    public ResponseEntity<?> getLastVisits(@PathVariable("uuid") String uuid) {
+        Object object = visitService.findAllVisitsByPatientUUID(uuid);
+        JSONObject jsonObject = new JSONObject(object.toString().substring(1, object.toString().length() - 1));
+        return ResponseEntity.ok(jsonObject.toString());
+    }
+
     @RequestMapping(value = "/{uuid}", method = RequestMethod.PUT)
     public ResponseEntity<?> closeVisit(@RequestBody() String body, @PathVariable("uuid") String uuid) {
         Object object = visitService.closeVisit(uuid, body);

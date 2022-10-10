@@ -1,32 +1,16 @@
 {
-  "identifiers": [
+  "id": 2,
+  "name": "jean Daboul MAXY",
+  "username": "admin",
+  "email": "admin@gmail.com",
+  "password": "$2a$10$iJGL77ahSFewPgqgNwVYAuQd4kgpWLv7XkUN.WEsbuR.ORBP.LUhW",
+  "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTY2NDY0MzY3OCwiZXhwIjoxNjY1NTA3Njc4fQ.k-VrBqg0Up_2_8E0I9qPta9E4iY0vudnjL0RLtjLP292wPfihq6TGE_3DhUt4E6ax-qMEtFbXY1r2-_HxYGLzQ",
+  "site": null,
+  "network": null,
+  "roles": [
     {
-      "identifier": "Asa213s",
-      "location": "353faea9-198c-4827-a3c8-55eb1570dd4a",
-      "identifierType": "9fb4533d-4fd5-4276-875b-2ab41597f5dd"
-    },
-    {
-      "identifier": "7135RJ",
-      "location": "353faea9-198c-4827-a3c8-55eb1570dd4a",
-      "identifierType": "05a29f94-c0ed-11e2-94be-8c13b969e334"
+      "id": 4,
+      "name": "ROLE_ADMIN"
     }
-  ],
-  "person": {
-    "addresses": [
-      {
-        "country": "",
-        "address1": "Delmas",
-        "stateProvince": "",
-        "cityVillage": ""
-      }
-    ],
-    "names": [
-      {
-        "familyName": "Charles",
-        "givenName": "Glaria "
-      }
-    ],
-    "birthdate": "2007-01-01T05:00:00.000Z",
-    "gender": "F"
-  }
+  ]
 }
